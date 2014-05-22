@@ -3,7 +3,7 @@ h2, h3 {
 }
 
 .promo {
-    background-image: image-url('custom/wedding-hero.png');
+    background-image: image-url('custom/wedding-hero.jpg');
     background-repeat: repeat;
     background-position: left top;
     background-size: cover;
@@ -25,6 +25,36 @@ h2, h3 {
         .tagline {
             margin-top: 80px;
             font-size: 20px;
+        }
+    }
+}
+
+.how {
+    background-image: image-url('custom/how-background.jpg');
+    background-repeat: repeat;
+    background-position: left top;
+    background-size: cover;
+    min-height: 500px;
+    .subtitle {
+        margin-top: 30px;
+        font-size: 22px;
+    }
+    .how-panels {
+        margin-top: 40px;
+        .how-panel {
+            .number-circle {
+                background: black;
+                padding: 2px;
+                color: white;
+                width: 24px;
+                display: inline-block;
+                text-align: center;
+                height: 24px;
+                border-radius: 50%;
+            }
+            .panel-header {
+                font-size: 18px
+            }
         }
     }
 }
