@@ -1,0 +1,30 @@
+h2, h3 {
+    font-weight: 200;
+}
+
+.promo {
+    background-image: image-url('custom/wedding-hero.png');
+    background-repeat: repeat;
+    background-position: left top;
+    background-size: cover;
+    .overview {
+        text-align: center;
+        min-height: 500px;
+        .title {
+            padding: 40px;
+        }
+        .designer-link {
+            margin-top: 15px;
+            a {
+                color: white;
+                :hover {
+                    color: white;
+                }
+            }
+        }
+        .tagline {
+            margin-top: 80px;
+            font-size: 20px;
+        }
+    }
+}
