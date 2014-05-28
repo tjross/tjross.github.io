@@ -1,3 +1,90 @@
-// Place all the styles related to the pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.promo {
+    background-image: image-url('custom/wedding-hero.jpg');
+    background-repeat: repeat;
+    background-position: left top;
+    background-size: cover;
+    .overview {
+        text-align: center;
+        min-height: 500px;
+        .title {
+            padding: 40px;
+        }
+        .designer-link {
+            margin-top: 15px;
+            a {
+                color: white;
+                :hover {
+                    color: white;
+                }
+            }
+        }
+        .tagline {
+            margin-top: 80px;
+            font-size: 20px;
+        }
+    }
+}
+
+.how {
+    background-image: image-url('custom/how-background.jpg');
+    background-repeat: repeat;
+    background-position: left top;
+    background-size: cover;
+    min-height: 500px;
+    padding: 40px 0;
+    .subtitle {
+        margin-top: 30px;
+        font-size: 22px;
+    }
+    .how-panels {
+        margin-top: 40px;
+        .how-panel {
+            margin-bottom: 20px;
+            .number-circle {
+                background: black;
+                padding: 2px;
+                color: white;
+                width: 24px;
+                display: inline-block;
+                text-align: center;
+                height: 24px;
+                border-radius: 50%;
+            }
+            .panel-header {
+                font-size: 18px
+            }
+        }
+    }
+}
+
+.make-it-yours {
+    background-image: image-url('custom/make-it-yours-background.jpg');
+    background-repeat: repeat;
+    background-position: left top;
+    background-size: cover;
+    min-height: 500px;
+    padding: 40px 0;
+    .subtitle {
+        margin: 30px 0;
+        font-size: 18px;
+    }
+    .miy-examples {
+        .miy-example {
+            position: relative;
+            margin-bottom: 40px;
+            img {
+                width: 100%;
+            }
+            .miy-caption {
+                position: absolute;
+                bottom: 0;
+                background: rgba(0, 0, 0, 0.64);
+                color: white;
+                width: 100%;
+                text-align: center;
+                padding: 4px 0;
+            }
+        }
+    }
+}

@@ -6,4 +6,5 @@ window.Layers = {
 
 $(document).ready(function() {
     Layers.init();
+    Layers.pages.init();
 });

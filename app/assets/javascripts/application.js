@@ -15,7 +15,9 @@
 //= require turbolinks
 //= require bootstrap
 //= require_tree ./plugins
+//= require jquery-validate
+//= require validate
 //= require theme-animations
 //= require theme-main
-//= require base
 //= require main
+//= require pages
