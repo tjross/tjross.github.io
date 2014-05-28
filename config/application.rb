@@ -19,5 +19,17 @@ module Layers
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+
+        config.action_mailer.smtp_settings = {
+            :authentication => :plain,
+            :address => "smtp.mailgun.org",
+            :port => 587,
+            :domain => ENV['MAILGUN_DOMAIN'],
+            :user_name => ENV['MAILGUN_USERNAME'],
+            :password => ENV['MAILGUN_PASSWORD']
+        }
+
+        config.admin_email = ENV['ADMIN_EMAIL']
+
   end
 end

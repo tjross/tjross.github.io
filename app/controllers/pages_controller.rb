@@ -9,6 +9,12 @@ class PagesController < ApplicationController
         inquiry = Inquiry.new(inquiry_params)
 
         if inquiry.save
+            #Send a confirmation email
+            begin
+                AdminMailer.inquiry_notification(inquiry).deliver
+            rescue => exception
+                logger.info exception.message
+            end
             render text: 'success'
         else
             render text: 'failure'

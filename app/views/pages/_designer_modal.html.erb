@@ -11,28 +11,21 @@
                 <%= form_tag(ajax_inquiry_path, method: "post", id: "designer_inquiry_form") do %>
                 <div class="modal-body">
                     <p style="margin-bottom: 20px;">
-                        43Layers is looking for the best designers across the country to be a part of our network.  Please enter your information below and we'll be in touch.
+                        43Layers is looking to work with the best designers around the world to be a part of our network.  Please enter your information below and we'll be in touch.
                     </p>
                     <div class="row">
                         <div class="col-md-6 col-md-offset-3">
 
 
                                 <div class="form-group">
-                                    <label for="inquiry_name">Name</label>
                                     <input type="text" class="form-control" id="inquiry_name" placeholder="Name" name="inquiry[name]">
                                 </div>
 
-                                <div class="form-group">
-                                    <label for="inquiry_email">Email Address</label>
+                                <div class="form-group">                             
                                     <input type="email" class="form-control" id="inquiry_email" placeholder="Email" name="inquiry[email]">
-                                </div>
+                                </div>       
 
-                                <div class="form-group">
-                                    <label for="inquiry_phone_number">Telephone Number</label>
-                                    <input type="tel" class="form-control" id="inquiry_phone_number" placeholder="Telephone Number" name="inquiry[phone_number]">
-                                </div>
-
-                                <input type="hidden" id="inquiry_source" name="inquiry[source]" value="designer_form">
+                                <input type="hidden" id="inquiry_source" name="inquiry[source]" value="DESIGNER">
 
                                 <p class="error-message" style="display: none">Hmm, we had trouble with your entries, please try again!</p>
                         </div>
@@ -41,7 +34,7 @@
                 </div> <!-- end of .modal-body -->
 
                 <div class="modal-footer">
-                    <button type="submit" class="btn btn-primary">
+                    <button type="submit" class="btn btn-theme">
                         <span class="text">Submit</span> <i class="loader fa fa-spinner fa-spin" style="display: none"></i>
                     </button>
                 </div>
