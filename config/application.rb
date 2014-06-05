@@ -31,5 +31,7 @@ module Layers
 
         config.admin_email = ENV['ADMIN_EMAIL']
 
+        config.google_analytics_id = ENV['GOOGLE_ANALYTICS_ID'] || ''
+
   end
 end
