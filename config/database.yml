@@ -1,9 +1,0 @@
-development:
-  adapter: postgresql
-  database: simpletailor_dev
-  host: localhost
-
-test:
-  adapter: postgresql
-  database: simpletailor_test
-  host: localhost
