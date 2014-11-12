@@ -96,6 +96,7 @@ h2 {
 
 .panel-body h2 {
     font-size:1.8em;
+
 }
 
 h3 {
@@ -169,6 +170,7 @@ p {
     }
     .panel-body {
         text-align: left;
+        float: left;
     }
     .panel-default {
 
