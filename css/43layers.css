@@ -40,7 +40,7 @@ h4.panel-title {
 }
 
 .terms {
-    height: 4100px;
+    height: 4100px !important;
 }
 @media (max-width: 800px) {
     .navbar-default .navbar-nav>li>a {
