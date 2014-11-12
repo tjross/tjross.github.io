@@ -1,0 +1,135 @@
+html
+  head
+      title 43 Layers - Contact
+      link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css')
+      meta(charset='utf-8')
+      meta(http-equiv='X-UA-Compatible', content='IE=edge')
+      meta(name='viewport', content='width=device-width, initial-scale=1.0')
+      meta(name='description', content='')
+      meta(name='author', content='')
+      link(href='assets/favicon-63145d8248825b74eebdc78eac197e68.ico', rel='shortcut icon', type='image/vnd.microsoft.icon')
+      link(data-turbolinks-track='true', href='assets/application-20d8a0d9519daf9530ba5538c4d80d01.css', media='all', rel='stylesheet')
+      meta(content='authenticity_token', name='csrf-param')
+      meta(content='INSwWYJn0d5ZZjpHJrY4srgu/SzsZC37GUdPZ5HYUZM=', name='csrf-token')
+      link(href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic', rel='stylesheet', type='text/css')
+      link(href='http://fonts.googleapis.com/css?family=Covered+By+Your+Grace', rel='stylesheet', type='text/css')
+      link(href='http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css', rel='stylesheet')
+      meta(charset='utf-8')
+      meta(http-equiv='X-UA-Compatible', content='IE=edge')
+      meta(name='viewport', content='width=device-width, initial-scale=1')
+      link(rel='stylesheet', href='css/selectize.css')
+      link(rel='stylesheet', href='css/selectize.bootstrap3.css')
+      link(rel='stylesheet', href='css/43layers.css')
+      link(rel='stylesheet', type='text/css', href='http://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700,800,900')
+      link(href='http://fonts.googleapis.com/css?family=Bentham', rel='stylesheet', type='text/css')
+      link(href='http://fonts.googleapis.com/css?family=Lora', rel='stylesheet', type='text/css')
+
+ body
+  nav.header.navbar.navbar-default.navbar-fixed-top(role='navigation')
+      .container
+        .navbar-header
+            button.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target="#collapsed_nav")
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            .nav.navbar-left
+                a(href='index.html')
+                  img(alt='Logo', src='icons/Main_nav_logo_blk_180px.png')
+        .collapse.navbar-collapse#collapsed_nav
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='#') Design
+            li
+              a(href='about.html') About
+            li
+              a(href='faq.html') FAQ
+            li
+              a(href='blog.html') Blog
+            li
+              a#login-button.btn.btn-default.btn-xs(href='#') Log In
+   section#contact.contact.section.has-pattern(style="margin-top:50px;")
+          .container
+            .row.text-center
+              h2.title Contact Us
+              .intro.col-md-6.col-sm-12.col-xs-12.col-md-offset-3
+                p
+                  | We&rsquo;d love to hear from you. Send us a note and we&apos;ll get back to you as soon as we possibly can.
+                ul.list-unstyled.contact-details
+                  li
+                    i.fa.fa-envelope(style="color:white; padding-right:5px;")
+                    a(href='mailto:contact@43layers.com', style="color:#20CB92;") contact@43layers.com
+                  li(style="color:white;")
+                    i.fa.fa-phone-square(style="color:white; padding-right:5px;")
+                    | 260-639-4343
+            // //row
+            .row.text-center
+              .contact-form.col-md-6.col-sm-12.col-xs-12.col-md-offset-3
+                form#contact_inquiry_form(accept-charset='UTF-8', action='/ajax/inquiry', method='post')
+                  div(style='margin:0;padding:0;display:inline')
+                    input(name='utf8', type='hidden', value='✓')
+                    input(name='authenticity_token', type='hidden', value='INSwWYJn0d5ZZjpHJrY4srgu/SzsZC37GUdPZ5HYUZM=')
+                  .form-group.name
+                    label.sr-only(for='name') Name
+                    input#name.form-control(type='text', placeholder='Name:', name='inquiry[name]')
+                  // //form-group
+                  .form-group.email
+                    label.sr-only(for='email') Email
+                    input#email.form-control(type='email', placeholder='Email:', name='inquiry[email]')
+                  // //form-group
+                  .form-group.message
+                    label.sr-only(for='message') Message
+                    textarea#message.form-control(rows='6', placeholder='Message:', name='inquiry[message]')
+                  // //form-group
+                  input#customer_source(type='hidden', name='inquiry[source]', value='CONTACT FORM')
+                  button.btn.btn-success(type='submit', style="background-color:#20CB92; border-color:#20CB92;")
+                    span.text(style="color:#fff;") Send Message
+                    i.loader.fa.fa-spinner.fa-spin(style='display: none')
+                  p.error-message(style='display: none') Hmm, we had trouble with your entries, please try again!
+                // //form
+              // //contact-form
+              .contact-form-success(style='display: none')
+                | Thank you!  We&apos;ll reply back soon.
+            // //row
+            .text-center
+              ul.social-icons.list-inline
+                li
+                  a(href='https://twitter.com/43Layers', target='_blank')
+                    img(src="icons/Twitter_icon_50px.png")
+
+                li
+                  a(href='https://www.facebook.com/pages/43-Layers/273568439486440', target='_blank')
+                    img(src="icons/Facebook_icon_50px.png")
+                li
+                  a(href='http://instagram.com/43layers', target='_blank')
+                    img(src="icons/Instagram_icon_50px.png")
+                li
+                  a(href='http://www.pinterest.com/43layers/', target='_blank')
+                    img(src="icons/Pintrest_icon_50px.png")
+              // //social-icons
+            // //row
+          // //container
+        // //contact
+  .footer
+    .container
+      form.nav.navbar-form.navbar-right(role='form', id="contactform", action='http://43layers.us3.list-manage.com/subscribe/post', method='POST')
+        input(type='hidden', name='u', value='85ad0a74783045ae677ecde19')
+        input(type='hidden', name='id', value='43eaa152c3')
+        input#MERGE0.form-control(type='text', name='MERGE0', size='25', placeholder='Sign Up for Emails', value='')
+        button.btn.btn-primary(type='submit') Submit
+      ul.nav.navbar-nav.navbar-right#lifooter
+        li
+          a(href='privacy.html') Privacy
+        li
+          a(href='terms.html') Terms
+        li
+          a(href='faq.html') FAQ
+        li
+          a(href='contact.html') Contact
+    p.text-center &copy; 43Layers 2014
+// jQuery (necessary for Bootstrap's JavaScript plugins)
+script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+// Include all compiled plugins (below), or include individual files as needed
+script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js')
+script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.js')
+script(src='js/selectize.js')
