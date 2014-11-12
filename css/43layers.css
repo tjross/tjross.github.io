@@ -38,6 +38,10 @@ h4.panel-title {
 .privacy {
     height:2500px !important;
 }
+
+.terms {
+    height: 4100px;
+}
 @media (max-width: 800px) {
     .navbar-default .navbar-nav>li>a {
     background-color:white !important;
