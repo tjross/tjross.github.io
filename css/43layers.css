@@ -41,7 +41,9 @@ h4.panel-title {
 
 .terms {
     height: 4100px !important;
+
 }
+
 @media (max-width: 800px) {
     .navbar-default .navbar-nav>li>a {
     background-color:white !important;
@@ -53,10 +55,13 @@ h4.panel-title {
 }
 .footer#privacy {
     margin-top:3399px !important;
-    font-size:0.8em;
+    f
 }
 .footer#terms {
     margin-top:7200px !important;
+}
+
+.footer {
     font-size:0.8em;
 }
 }
