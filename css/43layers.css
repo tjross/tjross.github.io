@@ -55,7 +55,7 @@ h4.panel-title {
 }
 .footer#privacy {
     margin-top:3399px !important;
-    f
+
 }
 .footer#terms {
     margin-top:11200px !important;
@@ -64,6 +64,12 @@ h4.panel-title {
 .footer {
     font-size:0.8em;
 }
+
+.faq .panel-body {
+    float:left !important;
+    text-align: left !important;
+}
+.footer
 }
 h1,h2 {
     font-family: 'Bentham', serif;
