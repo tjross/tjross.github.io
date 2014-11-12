@@ -34,6 +34,10 @@ h4.panel-title {
     border-color: #20cb92;
     color: #20cb92;
 }
+
+.privacy {
+    height:800px;
+}
 @media (max-width: 800px) {
     .navbar-default .navbar-nav>li>a {
     background-color:white !important;
