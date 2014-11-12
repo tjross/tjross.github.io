@@ -178,6 +178,10 @@ p {
 
     }
 
+    .terms {
+        height:4300px;
+    }
+
 }
 @media(max-width: 800px) {
     #us {
