@@ -179,7 +179,7 @@ p {
     }
 
     .terms {
-        height:4300px;
+        height:130px !important;
     }
 
 }
