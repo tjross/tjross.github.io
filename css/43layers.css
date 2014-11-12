@@ -172,7 +172,9 @@ p {
         text-align: left;
         float: left;
     }
-    .panel-default {
+    .panel-default p, .panel-default h1, .panel-default h2 {
+        float: left;
+
 
     }
 
