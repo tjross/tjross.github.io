@@ -36,7 +36,7 @@ h4.panel-title {
 }
 
 .privacy {
-    height:200px !important;
+    height:800px !important;
 }
 @media (max-width: 800px) {
     .navbar-default .navbar-nav>li>a {
