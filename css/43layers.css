@@ -360,8 +360,9 @@ p {
         margin-top:40px;
         background:#000 url('../images/Footer_background_image_desktop.jpg') no-repeat 0px 0px;
     }
-    #contactbuttons {
-        width:50px !important;
+    #mobile {
+        font-weight: 300;
+        color:#fff;
     }
     #contactus, #tired {
         margin-top:5px;
