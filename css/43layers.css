@@ -357,7 +357,7 @@ p {
         background:#000 url('../images/Footer_background_image_desktop.jpg') no-repeat 0px 0px;
     }
     #contactbuttons {
-        width:50%;
+        width:50px;
     }
     #contactus, #tired {
         margin-top:5px;
