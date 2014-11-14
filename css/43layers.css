@@ -362,13 +362,11 @@ p {
     }
     #lifooter li {
         display:inline !important;
-        font-size:1.8em;
         margin-left:1px;
         margin-top:10px;
     }
     #lifooter li a {
         margin-left:5px;
-        font-size:1.8em;
     }
 
 
@@ -385,7 +383,9 @@ p {
     }
     
 }
-
+#lifooter {
+    font-size:1.8em;
+}
 .hero #first-typed {
     text-transform: uppercase;
     color: #fff;
