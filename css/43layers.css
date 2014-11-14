@@ -258,7 +258,8 @@ p {
     .col-md-6.text-center img {
     }
     #quote {
-        color:#fff;
+        color:#fff !important;
+        font-family: sans-serif;
     }
     .hero > .container {
         height:880px;
