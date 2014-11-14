@@ -355,6 +355,9 @@ p {
         margin-top:40px;
         background:#000 url('../images/Footer_background_image_desktop.jpg') no-repeat 0px 0px;
     }
+    #lifooter {
+        margin-top:5px;
+    }
     #lifooter li {
         display:inline !important;
         margin-left:13px;
