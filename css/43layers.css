@@ -356,9 +356,11 @@ p {
         margin-top:40px;
         background:#000 url('../images/Footer_background_image_desktop.jpg') no-repeat 0px 0px;
     }
+    #contactbuttons {
+        width:50%;
+    }
     #contactus, #tired {
         margin-top:5px;
-        width:50px;
         margin-left:60px;
     }
     #lifooter li {
