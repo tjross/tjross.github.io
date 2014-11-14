@@ -257,6 +257,9 @@ p {
     }
     .col-md-6.text-center img {
     }
+    #quote {
+        color:#fff;
+    }
     .hero > .container {
         height:880px;
     }
