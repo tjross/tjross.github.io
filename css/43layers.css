@@ -358,6 +358,7 @@ p {
     }
     #contactus, #tired {
         margin-top:5px;
+        width:50px;
         margin-left:60px;
     }
     #lifooter li {
