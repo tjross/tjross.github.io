@@ -36,3 +36,8 @@ config/environments/*.local.yml
 
 #ignore the ssl folder
 /ssl
+
+# node
+*.log
+node_modules
+
