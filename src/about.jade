@@ -4,16 +4,10 @@ block title
   title 43 Layers - About
 
 block content
-  .modal.fade#modal1(tabindex="-1", role="dialog", aria-hidden="true", aria-labelledby="#modal1")
-      .modal-dialog
-        .modal-content
-          .modal-header
-            button.close(type="button", data-dismiss="modal")
-              span(aria-hidden="true")
-              span.sr-only close
   include  ./_nav.jade
+
   .about_section
-      .container#main
+    .container#main
         h1.text-center(style="font-size:2.0em; margin-top:50px; margin-bottom:25px; text-align:center;") About Us
         | 43Layers is a marketplace where you can design your own custom gifts, decor and accessories. 
         | Whether you want to create décor for a wedding, dining accessories for a dinner party or jewelry as a gift for someone special, we are the only consumer products company where you can design and make truly custom products that are both high quality and affordable.
@@ -22,7 +16,5 @@ block content
         h1.text-center(style="font-size:2.0em; margin-top:50px; margin-bottom:25px; text-align:center;") Our Mission
         | Our Purpose is to make products more personal and meaningful by giving you a say in the design and manufacturing process. 
         | Our Vision is to make the most personal consumer products company in the history of the planet. We want to completely reinvent the way our community shops by making it not only possible, but easy to customize or personalize any product you buy. Every single product we sell will always be designed and made specifically for YOU and we will be here to help every step of the way.    
-    
           
-    include ./_footer.jade
-    
+    include ./_footer.jade    
