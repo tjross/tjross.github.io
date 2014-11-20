@@ -3,11 +3,14 @@ body {
     color: #4e4d4d;
 }
 
-
 /* Footer */
 .footer {
     padding: 50px;
     background-color: #686b6a;
+}
+.footer-logo {
+    width: 190px;
+    height: 50px;
 }
 .footer-links {
     margin: 10px auto 10px;
@@ -26,11 +29,12 @@ body {
     text-transform: uppercase;
 }
 .copy {
-    margin: 20px 0;
-    font-size: 0.9em;
+    padding: 20px;
+    font-size: 1em;
     color: rgb(255, 255, 255);
     text-align: center;
     font-family: 'Lato', serif;
+    text-transform: uppercase;
 }
 .newsletter {
     width: 100%;
@@ -52,8 +56,6 @@ body {
     margin-bottom: -1px;
 }
 
-
-
 /* Forms controls */
 .form-control,
 .form-control:focus {
@@ -63,29 +65,22 @@ body {
     border-radius: 0;
     box-shadow: none;
 }
-
 .btn-primary {
     background-color: #20cb92;
     border-radius: 0;
     text-transform: uppercase;
     border-color: #20cb92
 }
-
 .btn-primary:hover, .btn-primary:active {
     background-color: #999;
     border-radius: 0;
     border-color: #999;
 }
-
 .btn-default:hover, .btn-default:active {
     border-color: #20cb92;
     color: #20cb92;
     border-radius: 0;
 }
-
-
-
-
 
 
 #contactform {
