@@ -1,17 +1,25 @@
-.footer
-  .container
-    form.nav.navbar-form.navbar-right(role='form', id="contactform", action='http://43layers.us3.list-manage.com/subscribe/post', method='POST')
-      input(type='hidden', name='u', value='85ad0a74783045ae677ecde19')
-      input(type='hidden', name='id', value='43eaa152c3')
-      input#MERGE0.form-control(type='text', name='MERGE0', size='25', placeholder='Sign Up for Emails', value='')
-      button.btn.btn-primary(type='submit') Submit
-    ul.nav.navbar-nav.navbar-right#lifooter
-      li
-        a(href='privacy.html') Privacy
-      li
-        a(href='terms.html') Terms
-      li
-        a(href='faq.html') FAQ
-      li
-        a(href='contact.html') Contact
-  p.text-center &copy; 43Layers 2014
+.footer.container-fluid
+  .row
+    .col-md-4.col-md-offset-2
+      ul.footer-links
+        li
+          a(href='privacy.html') Privacy
+        li
+          a(href='terms.html') Terms
+        li
+          a(href='faq.html') FAQ
+        li
+          a(href='contact.html') Contact
+          
+    .col-md-4
+      .newsletter
+        form(action='http://43layers.us3.list-manage.com/subscribe/post', method='POST')
+        input(type='hidden', name='u', value='85ad0a74783045ae677ecde19')
+        input(type='hidden', name='id', value='43eaa152c3')
+        .email
+          input.form-control(type='text', name='MERGE0', placeholder='Newsletter')
+        .subscribe
+          button.btn.btn-primary(type='submit') Subscribe
+  .row
+    .col-md-12
+      p.copy &copy;  2014  43Layers
