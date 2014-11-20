@@ -77,35 +77,3 @@ block content
 
     include ./_footer.jade
 
-    // jQuery (necessary for Bootstrap's JavaScript plugins)
-    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
-    // Include all compiled plugins (below), or include individual files as needed
-    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js')
-    script(src='js/selectize.js')
-    script(src='js/typed.js')
-    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
-    script.
-      $('#select').selectize({
-      create: true,
-      optgroupOrder: ["Weddings", "Other Events"]
-      });
-      $(function(){
-      $("#first-typed").typed({
-      strings: ["Cake Topper", "Cufflinks", "Wedding Gift", "Necklaces", "Wine Charms", "Confetti", "Table Centerpieces"],
-      typeSpeed: 80,
-      showCursor: false,
-      backDelay: 5000,
-      startDelay: 500,
-      loop: true
-      });
-      });
-      $(function(){
-      $("#second-typed").typed({
-      strings: ["your Wedding", "Groomsmen", "Your Fiancé", "Bridesmaids", "a Dinner Party", "New Years Eve", "a Baby Shower"],
-      typeSpeed: 80,
-      showCursor: false,
-      backDelay: 5000,
-      startDelay: 3000,
-      loop: true
-      });
-      });
