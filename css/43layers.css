@@ -30,7 +30,7 @@ body {
 /* Footer */
 .footer {
     padding: 50px;
-    background-color: #686b6a;
+    background-color :#686b6a;
 }
 .footer-logo {
     width: 190px;
@@ -89,21 +89,60 @@ body {
     border-radius: 0;
     box-shadow: none;
 }
+.budget,
+.budgte:focus {
+    display: inline;
+    outline: 0;
+    padding: 6px;
+    border: 3px solid #665F56;
+    border-radius: 0;
+    box-shadow: none;
+}
+.inspiration {
+    width: 80%;
+    margin: 10%;
+    background-color: #e6e6e6;
+    border: 2px dashed #686b6a;
+}
+
 .btn-primary {
     background-color: #20cb92;
     border-radius: 0;
     text-transform: uppercase;
     border-color: #20cb92
 }
-.btn-primary:hover, .btn-primary:active {
+.btn-primary:hover,
+.btn-primary:active {
     background-color: #999;
     border-radius: 0;
     border-color: #999;
 }
-.btn-default:hover, .btn-default:active {
+.btn-secondary {
+    margin: 10px;
+    color: #fff;
+    background-color: #686b6a;
+    border-radius: 0;
+    text-transform: uppercase;
+    border-color: #686b6a;
+}
+.btn-secondary:hover,
+.btn-secondary:active {
+    color: #fff;
+    background-color: #999;
+    border-radius: 0;
+    border-color: #999;
+}
+.btn-default:hover,
+.btn-default:active {
     border-color: #20cb92;
     color: #20cb92;
     border-radius: 0;
+}
+
+/* headings */
+.step {
+    text-align: center;
+    padding-top: 80px;
 }
 
 
