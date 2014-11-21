@@ -12,6 +12,9 @@ body {
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
     text-transform: uppercase;
 }
+.navbar-nav li:hover {
+    background-color: #d0b0d9;
+}
 .site-logo {
     height: 250%;
     margin-top: -15px;
@@ -297,23 +300,33 @@ p {
     text-transform: uppercase;
     color: #fff;
     background-color: #20cb92;
+    padding: 10px;
 }
 
 .hero #second-typed {
     text-transform: uppercase;
     color: #fff;
     background-color: #d0b0d9;
+    padding: 10px;
 }
 
+
+.hero h1, .hero h2, .hero h3 {
+    text-align: center;
+}
+.hero h1 {
+    
+}
 .hero h2 {
+    color: #fff;
     padding-bottom: 80px;
 }
-
 .hero h3 {
     font-weight: normal;
     font-size: 22px;
     padding-bottom: 30px;
 }
+
 
 .hero .selectize-input {
     height: 0.05402160864%;
