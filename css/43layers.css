@@ -23,9 +23,14 @@ body {
     padding-top: 6.92%;
     padding-bottom: 6.92%;
     background: #000 url('../images/Hero_highres_full_width.jpg') no-repeat center;
-    background-size:cover;
+    background-size: cover;
 }
 
+/* More info section */
+.more-info {
+    border-radius: 0;
+    margin-top: 5px;
+}
 
 /* Footer */
 .footer {
@@ -157,9 +162,6 @@ body {
     img.animal {
 	width:75%;
     }
-    .footer {
-	font-size:0.8em;
-    }
 }
 
 h1,h2 {
@@ -212,7 +214,6 @@ p {
         margin-right:0;
     }
     .hero {
-
         padding-top:0;
         padding-bottom:0;
     }
@@ -232,7 +233,7 @@ p {
         font-family: sans-serif;
     }
     .hero > .container {
-        height:880px;
+        height: 880px;
     }
     #submit h1 {
         font-style: italic;
@@ -315,10 +316,6 @@ p {
         font-weight: 300;
         color:#fff;
     }
-    #contactus, #tired {
-        margin-top:5px;
-        margin-left:75px;
-    }
     #lifooter li {
         display:inline !important;
         font-size:0.5em;
@@ -353,9 +350,6 @@ p {
 .hero h1, .hero h2, .hero h3 {
     text-align: center;
 }
-.hero h1 {
-    
-}
 .hero h2 {
     color: #fff;
     padding-bottom: 80px;
@@ -365,7 +359,6 @@ p {
     font-size: 22px;
     padding-bottom: 30px;
 }
-
 
 .hero .selectize-input {
     height: 0.05402160864%;
@@ -561,18 +554,10 @@ p {
 	padding-bottom: 50px;
 	background-size: cover;
 }
-    #contactbuttons {
-	width:30px !important;
-	display: inline;
-    }
     .col-md-2.btn.btn-lg.btn-default {
 	padding-left:30px;
 	padding-right:30px;
 	margin-left:30px;
-    }
-    #tired {
-	padding-left:44px;
-	padding-right:50px;
     }
     #contactus {
 	padding-left:15px !important;
@@ -588,7 +573,22 @@ body {
 }
 @media(max-width:767px) {
     body {
-	font-size: 1em;
+	font-size: 1.5em;
+    }
+    .hero {
+	padding-top: 80px;
+    }
+    .hero h1 {
+	font-size: 2em;
+    }
+    .hero h2 {
+	font-size: 1.5em;
+    }
+    .hero h3 {
+	font-size: 0.6em;
+    }
+    .footer {
+	font-size: 0.8em;
     }
     .newsletter {
 	display: none;
@@ -598,9 +598,6 @@ body {
     body {
 	font-size: 1em;
     }
-    .newsletter {
-	display: none;
-    }
 }
 @media(min-width:992px) {
     body {
@@ -609,6 +606,6 @@ body {
 }
 @media(min-width:1200px) {
     body {
-	font-size: 1em;
+	font-size: 1.5em;
     }
 }
