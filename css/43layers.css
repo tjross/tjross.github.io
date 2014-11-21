@@ -582,4 +582,33 @@ p {
     }
 }
 
-
+/* Responsive font size */
+body {
+    font-size: 100%;
+}
+@media(max-width:767px) {
+    body {
+	font-size: 1em;
+    }
+    .newsletter {
+	display: none;
+    }
+}
+@media(min-width:768px) {
+    body {
+	font-size: 1em;
+    }
+    .newsletter {
+	display: none;
+    }
+}
+@media(min-width:992px) {
+    body {
+	font-size: 1em;
+    }
+}
+@media(min-width:1200px) {
+    body {
+	font-size: 1em;
+    }
+}
