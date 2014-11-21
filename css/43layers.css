@@ -3,6 +3,27 @@ body {
     color: #4e4d4d;
 }
 
+.header {
+    padding: 15px 7% 15px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 0 4px rgba(0,0,0,0.4);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
+}
+.site-logo {
+    height: 250%;
+    margin-top: -15px;
+}
+.hero {
+    padding-top: 6.92%;
+    padding-bottom: 6.92%;
+    background: #000 url('../images/Hero_highres_full_width.jpg') no-repeat center;
+    background-size:cover;
+}
+
+
 /* Footer */
 .footer {
     padding: 50px;
@@ -124,27 +145,6 @@ h3 {
 p {
     font-size: 1.2em;
     font-weight: lighter;
-}
-
-.header {
-    padding: 15px 7% 15px;
-    height: 80px;
-    background: rgb(255, 255, 255);
-    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
-    -moz-box-shadow: 0 0 4px rgba(0,0,0,0.4);
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
-    text-transform: uppercase;
-}
-
-.header img {
-    height: 50px;
-}
-
-.hero {
-    padding-top: 6.92%;
-    padding-bottom: 6.92%;
-    background: #000 url('../images/Hero_highres_full_width.jpg') no-repeat center;
-    background-size:cover;
 }
 
 @media(min-width: 800px) {
