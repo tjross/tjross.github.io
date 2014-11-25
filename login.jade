@@ -1,14 +1,14 @@
-extends ./_base.jade
+extends ./partials/_base.jade
 
 block title
   title 43 Layers - Log in
 
 block content
-  include ./_header.jade
+  include ./partials/_header.jade
   .wrapper
     .container
       h2 Log in
       input.form-control(placeholder="Username")
       input.form-control(placeholer="Password")
       button.btn.btn-primary.btn-block Log in
-  include ./_footer.jade
+  include ./partials/_footer.jade
