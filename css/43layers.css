@@ -31,6 +31,18 @@ html {
     font-family: 'Lato', sans-serif;
 }
 
+/* HEADINGS */
+
+h2 {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+}
 
 /* FORM CONTROLS */
 
@@ -151,21 +163,10 @@ html {
     margin: 50px 0;
 }
 
-.creations h2 {
-    text-align: center;
-    font-size: 1.6rem;
-}
-
 .creation img {
     display: block;
     width: 85%;
     margin: 0 auto;
-}
-
-.creation h3 {
-    text-align: center;
-    font-size: 1rem;
-    font-family: 'Lato', sans-serif;
 }
 
 .creation p {
@@ -180,15 +181,11 @@ html {
 /* TESTIMONIAL */
 
 .testimonial {
+    height: 300px;
     width: 100%;
-    height: 200px;
-    background: #000 url('../images/Quote_highres_full_width.jpg') no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: contain;
-
-}
+    background: url('../images/Quote_highres_full_width.jpg') no-repeat center;
+    background-size: cover;
+ }
 
 .testimonial h2, .testimonial h3 {
     color: #fff;
@@ -198,6 +195,64 @@ html {
     font-size: 20px;
 }
 
+
+/* PROCESS */
+
+.process {
+    padding-top: 30px;
+    padding-bottom: 80px;
+}
+
+.process .col-md-3 {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.process a {
+    width: 75px;
+    height: 75px;
+    display: block;
+}
+
+.step {
+    margin-top: 50px;
+}
+
+.step:hover + h3 {
+    color: #20cb92;
+}
+
+.submit {
+    background: transparent url('../icons/Lightbulb_icon_75px.png');
+}
+
+.submit:hover {
+    background: transparent url('../icons/lightbulb_icon_75_green_hover.png');
+}
+
+.meet {
+    background: transparent url('../icons/Chat_icon_non_hover.png');
+}
+
+.meet:hover {
+    background: transparent url('../icons/Chat_icon_hover.png');
+}
+
+.view {
+    background: transparent url('../icons/ScreenIcon_icon_75px.png');
+}
+
+.view:hover {
+    background: transparent url('../icons/Screen_Hover_icon_75px.png');
+}
+
+.hold {
+    background: transparent url('../icons/Holdinyourhand_icon_non_hover.png');
+}
+
+.hold:hover {
+    background: transparent url('../icons/Holdinyourhand_icon_hover.png');
+}
 
 
 /* FOOTER */
@@ -329,13 +384,6 @@ html {
 }
 
 
-/* headings */
-.step {
-    text-align: center;
-    padding-top: 80px;
-}
-
-
 h1,h2 {
     font-family: 'Bentham', serif;
 }
@@ -347,64 +395,6 @@ p {
 
 #lifooter {
     font-size:1.2em;
-}
-
-
-.process {
-    padding-top: 30px;
-    padding-bottom: 80px;
-}
-
-.process h2 {
-    padding-bottom: 50px;
-}
-
-.process h3 {
-    font-weight: 300;
-    font-size: 24px;
-}
-
-.process .col-md-3 {
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-.process a {
-    width: 75px;
-    height: 75px;
-    display: block;
-}
-
-.process .submit {
-    background:transparent url('../icons/Lightbulb_icon_75px.png') center top no-repeat;
-}
-
-.process .submit:hover {
-    background:transparent url('../icons/lightbulb_icon_75_green_hover.png');
-}
-
-.process .meet {
-    background:transparent url('../icons/Chat_icon_non_hover.png');
-}
-
-.process .meet:hover {
-    background:transparent url('../icons/Chat_icon_hover.png');
-}
-
-.process .view {
-    background:transparent url('../icons/ScreenIcon_icon_75px.png') center top no-repeat;
-}
-
-.process .view:hover {
-    background:transparent url('../icons/Screen_Hover_icon_75px.png');
-}
-
-.process .hold {
-    background:transparent url('../icons/Holdinyourhand_icon_non_hover.png') center top no-repeat;
-}
-
-.process .hold:hover {
-    background:transparent url('../icons/Holdinyourhand_icon_hover.png');
 }
 
 .step1 {

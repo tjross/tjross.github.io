@@ -44,27 +44,33 @@ block content
                   | Kelly had the idea to design a set of decorative skeleton keys to give to her fianc&eacute;. Each one had a different phrase, a different &quot;key to love.&quot; This is how they turned out.
     // end of .creations
 
-  //    
+      
     .testimonial
+      h2 What Our Customers Are Saying
+      .container
+        .row
+          .col-md-12
+            p
+              | Thank you SO much for the picture!!! I can't wait to see it in person! I can't believe the detail of the work you can do! Love! So excited! Thank you so much! Also, excited to work with you on the other projects!
     // end of .testimonial
     
-  //
     .process
-      .container.howitworks
-        h2.text-center#howitworks How It Works
-          .row.text-center
+      h2 How It Works
+      .container
+          .row
             .col-md-3
+              a.step.submit.center-block(href='#submit')
               h3 1. Submit Your Idea
-              a.submit.center-block(href='#submit') &nbsp;
             .col-md-3
+              a.step.meet.center-block(href='#meet')
               h3 2. Meet Your Designer
-              a.meet.center-block(href='#meet') &nbsp;
             .col-md-3
+              a.step.view.center-block(href='#view')
               h3 3. View Digital Preview
-              a.view.center-block(href='#view') &nbsp;
             .col-md-3
+              a.step.hold.center-block(href='#hold')
               h3 4. Hold In Your Hands
-              a.hold.center-block(href='#hold') &nbsp;
+    // end of .process
 
     //
       #submit.step1(style="background-size:cover;")
