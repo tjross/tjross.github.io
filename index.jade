@@ -21,6 +21,123 @@ block content
             include ./partials/_select.jade
           .col-md-3
             button.btn.btn-primary.btn-block Get Started
+    // end of .hero
+
+    .creations
+      h2 Recent Customer Creations
+      .container
+          .row
+            .col-md-4.creation
+                img(src='images/Deer_stir_products_page.jpg')
+                h3 Animal Stir Sticks &amp; Centerpieces
+                p
+                  | Kaella wanted to create wooden animal themed stir sticks and table centerpieces for her friend&apos;s baby shower. This is what she came up with.
+            .col-md-4.creation
+                img(src='images/Cufflinks_products.jpg' data-toggle="modal" data-target="#recent-creation")
+                h3 Monogram Fighting Irish Cufflinks
+                p
+                  | Josh, a Notre Dame grad, was having his wedding at his alma mater in South Bend, he wanted to create some special gifts for his groomsmen. This is what they wore.
+            .col-md-4.creation
+                img(src='images/Key_horizontal.jpg')
+                h3 Keys to Love
+                p
+                  | Kelly had the idea to design a set of decorative skeleton keys to give to her fianc&eacute;. Each one had a different phrase, a different &quot;key to love.&quot; This is how they turned out.
+    // end of .creations
+
+  //    
+    .testimonial
+    // end of .testimonial
+    
+  //
+    .process
+      .container.howitworks
+        h2.text-center#howitworks How It Works
+          .row.text-center
+            .col-md-3
+              h3 1. Submit Your Idea
+              a.submit.center-block(href='#submit') &nbsp;
+            .col-md-3
+              h3 2. Meet Your Designer
+              a.meet.center-block(href='#meet') &nbsp;
+            .col-md-3
+              h3 3. View Digital Preview
+              a.view.center-block(href='#view') &nbsp;
+            .col-md-3
+              h3 4. Hold In Your Hands
+              a.hold.center-block(href='#hold') &nbsp;
+
+    //
+      #submit.step1(style="background-size:cover;")
+        .container
+          .row
+            .col-md-1.text-right
+              h1#one 1
+            .col-md-5
+              h2 Submit Your Design Idea
+              h3 Get Inspired and Tell Us What You Want to Make
+              p(id="quote").
+                 Fill out a design brief and add pictures and/or sketches to an Idea Board to communicate the vision for your product. If you need some inspiration, let us know, we can help!
+            .col-md-6.text-center(id="mac")
+              a(href="#modal1", data-target="#modal1", role="modal", data-toggle="modal")
+                img(src='icons/submit_your_idea_imac.png')
+    //            
+      #meet.step2
+        .container
+          .row
+            .col-md-1.text-left(id="header2")
+              h1 2
+            .col-md-6.text-center
+              img(src='icons/Start_collaborating_Imac.png')
+            .col-md-5
+              h2.text-right Start Collaborating
+              h3.text-right Meet Your Designer and Start Your Project
+              p.text-right#mobile We will assign you a designer from our network of world-class product designers. Once you start your project, you will be directed to our design center where you&apos;ll communicate directly with your designer.
+
+    //
+      #view.step3(style="background-size:cover;")
+        .container
+          .row
+            .col-md-1.text-right
+              h1#three 3
+            .col-md-5
+              h2 View Digital Preview
+              h3 Bring Your Idea to Life on Screen Before Making Your Order
+              p#quote As soon as you and your designer agree on a design, your designer will send across a life-like digital preview of your product. Iterate on your product design until you are in love.
+            .col-md-6.text-center
+              img(src='icons/view_digital_product.png')
+
+    //
+      #hold.step4
+        .container
+          .row
+            .col-md-1.text-left
+              h1 4
+            .col-md-6.text-center
+              img(src='icons/holdinyourhandimac.png')
+            .col-md-5
+              h2.text-right Hold It In Your Hands 
+              h3.text-right Choose Material and Ship the Design to Your Door
+              p.text-right#quote Once you agree on a final design, just choose the material and finish you want your product in and get it delivered to your door. You can literally hold your idea in your hands.
+          .row
+            .col-md-4.col-md-offset-4.btn.btn-lg.btn-primary#getstartedbutton
+              | Get Started
+      .contact
+        .container
+          h2.text-center Want To Know More?
+          .row
+            .col-md-2.col-md-offset-4
+              .btn.btn-lg.btn-block.more-info FAQ
+            .col-md-2
+              .btn.btn-lg.btn-block.more-info Contact Us
+        .row.text-center
+          a(href='https://www.facebook.com/pages/43Layers/273568439486440')
+            img(src='icons/Facebook_icon_50px.png')
+          a(href='https://twitter.com/43Layers')
+            img(src='icons/Twitter_icon_50px.png')
+        a(href='http://instagram.com/43layers')
+          img(src='icons/Instagram_icon_50px.png')
+        a(href='http://www.pinterest.com/43layers')
+          img(src='icons/Pintrest_icon_50px.png')
 
   include ./partials/_footer.jade
 
