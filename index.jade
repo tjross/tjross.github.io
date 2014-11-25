@@ -1,11 +1,11 @@
-extends ./_base.jade
+extends ./partials/_base.jade
 
 block title
   title 43 Layers - Home
 
 block content
-  include  ./_header.jade
-  include ./_modal.jade
+  include  ./partials/_header.jade
+  include ./partials/_modal.jade
   .hero
       .container
         h1 Where Everyone Is a Designer
@@ -239,5 +239,5 @@ block content
         a(href='http://www.pinterest.com/43layers')
           img(src='icons/Pintrest_icon_50px.png')
 
-  include ./_footer.jade
+  include ./partials/_footer.jade
 
