@@ -15,12 +15,64 @@ body {
     padding-bottom: 100px;
 }
 
-/*
-.header {
-    padding: 15px 7% 15px;
-    background: rgb(255, 255, 255);
+
+/* FONTS */
+
+html {
+    color: #4e4d4d;
+    font-size: 100%;
+    font-family: 'Lato', sans-serif;
 }
-*/
+
+
+/* FORM CONTROLS */
+
+.form-control,
+.form-control:focus {
+    outline: 0;
+    padding: 17px;
+    border: 3px solid #665F56;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+
+/* BUTTONS */
+
+.btn-primary {
+    background-color: #20cb92;
+    border-radius: 0;
+    text-transform: uppercase;
+    border-color: #20cb92
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+    background-color: #999;
+    border-radius: 0;
+    border-color: #999;
+}
+
+.btn-secondary {
+    background-color: #686b6a;
+    border-radius: 0;
+    text-transform: uppercase;
+    border-color: #686b6a;
+}
+
+.btn-secondary:hover,
+.btn-secondary:active {
+    background-color: #999;
+    border-radius: 0;
+    border-color: #999;
+}
+
+.btn-default:hover,
+.btn-default:active {
+    border-color: #20cb92;
+    color: #20cb92;
+    border-radius: 0;
+}
 
 
 /* NAVIGATION BAR */
@@ -43,12 +95,78 @@ body {
 }
 
 
-/* FONTS */
+/* HERO */
 
-html {
-    color: #4e4d4d;
-    font-size: 100%;
-    font-family: 'Lato', sans-serif;
+.hero {
+    width: 100%;
+    height: 500px;
+    margin-top: -20px;
+    background: url('../images/Hero_highres_full_width.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.hero #first-typed {
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #20cb92;
+    padding: 5px;
+}
+
+.hero #second-typed {
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #d0b0d9;
+    padding: 5px;
+}
+
+.hero h1, .hero h2, .hero h3 {
+    text-align: center;
+}
+
+.hero .selectize-input {
+    height: 0.05402160864%;
+    border-radius: 0px;
+    padding: 10px 16px;
+}
+
+.hero .selectize-input input, .selectize-dropdown {
+    font-size: 1.2em;
+}
+
+
+/* FOOTER */
+
+.footer {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 50px;
+    background-color :#686b6a;
+}
+
+
+/* SUBMIT YOUR IDEA FORM */
+
+.budget,
+.budgte:focus {
+    display: inline;
+    outline: 0;
+    padding: 6px;
+    border: 3px solid #665F56;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.inspiration {
+    width: 80%;
+    margin: 10%;
+    background-color: #e6e6e6;
+    border: 2px dashed #686b6a;
 }
 
 
@@ -134,47 +252,7 @@ html {
 }
 
 
-/* HERO */
-
-.hero {
-    width: 100%;
-    height: 500px;
-    margin-top: -20px;
-    background: url('../images/Hero_highres_full_width.jpg') no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.hero #first-typed {
-    text-transform: uppercase;
-    color: #fff;
-    background-color: #20cb92;
-    padding: 5px;
-}
-
-.hero #second-typed {
-    text-transform: uppercase;
-    color: #fff;
-    background-color: #d0b0d9;
-    padding: 5px;
-}
-
-.hero h1, .hero h2, .hero h3 {
-    text-align: center;
-}
-
-.hero .selectize-input {
-    height: 0.05402160864%;
-    border-radius: 0px;
-    padding: 10px 16px;
-}
-
-.hero .selectize-input input, .selectize-dropdown {
-    font-size: 1.2em;
-}
-
+/* Here starts the old code */
 
 /* More info section */
 .more-info {
@@ -183,95 +261,11 @@ html {
 }
 
 
-/* FOOTER */
-
-.footer {
-    width: 100%;
-    height: 100px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 50px;
-    background-color :#686b6a;
-}
-
-
-/* FORM CONTROLS */
-
-.form-control,
-.form-control:focus {
-    outline: 0;
-    padding: 17px;
-    border: 3px solid #665F56;
-    border-radius: 0;
-    box-shadow: none;
-}
-
-
-/* BUTTONS */
-
-.btn-primary {
-    background-color: #20cb92;
-    border-radius: 0;
-    text-transform: uppercase;
-    border-color: #20cb92
-}
-
-.btn-primary:hover,
-.btn-primary:active {
-    background-color: #999;
-    border-radius: 0;
-    border-color: #999;
-}
-
-.btn-secondary {
-    background-color: #686b6a;
-    border-radius: 0;
-    text-transform: uppercase;
-    border-color: #686b6a;
-}
-
-.btn-secondary:hover,
-.btn-secondary:active {
-    background-color: #999;
-    border-radius: 0;
-    border-color: #999;
-}
-
-.btn-default:hover,
-.btn-default:active {
-    border-color: #20cb92;
-    color: #20cb92;
-    border-radius: 0;
-}
-
-
-/* SUBMIT YOUR IDEA FORM */
-
-.budget,
-.budgte:focus {
-    display: inline;
-    outline: 0;
-    padding: 6px;
-    border: 3px solid #665F56;
-    border-radius: 0;
-    box-shadow: none;
-}
-
-.inspiration {
-    width: 80%;
-    margin: 10%;
-    background-color: #e6e6e6;
-    border: 2px dashed #686b6a;
-}
-
-
 /* headings */
 .step {
     text-align: center;
     padding-top: 80px;
 }
-
 
 
 h1,h2 {
