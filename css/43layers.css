@@ -1,5 +1,4 @@
 /* FONT STACK */
-
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700|Lora:400,700|Bentham);
 
 
@@ -31,6 +30,7 @@ html {
     font-family: 'Lato', sans-serif;
 }
 
+
 /* HEADINGS */
 
 h2 {
@@ -43,6 +43,7 @@ h3 {
     font-size: 1rem;
     font-family: 'Lato', sans-serif;
 }
+
 
 /* FORM CONTROLS */
 
@@ -255,6 +256,67 @@ h3 {
 }
 
 
+/* STEP DETAILS */
+
+.step-detail {
+    height: 500px;
+    padding: 20px;
+}
+
+.step-detail h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.step-number {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', sans-serif;
+}
+
+.step-name {
+    margin: 0;
+    padding: 0;
+}
+
+.step-description {
+    margin: 0;
+    padding: 0;
+}
+
+.step-icon img {
+    display: block;
+    margin: 0 auto;
+}
+
+.step-picture a img {
+    display: block;
+    width: 100%;
+}
+
+
+/* STEP 1: SUBMIT YOUR DESIGN IDEA */
+
+.step1 {
+    background-size: cover;
+    background: url('../images/Idea_BKG-IMG_High_Res.jpg') no-repeat center;
+}
+
+
+/* STEP 2: MEET YOUR DESGINER */
+
+
+/* STEP 3: VIEW DIGITAL PREVIEW */
+
+.step3 {
+    background-size: cover;
+    background: url('../images/View_BKG_IMG.jpg') no-repeat center;
+}
+
+
+/* STEP 4: HOLD IT IN YOUR HANDS */
+
+
 /* FOOTER */
 
 .footer {
@@ -311,6 +373,18 @@ h3 {
     }
 
     .hero select {
+	font-size: 0.6rem;
+    }
+
+    .step-number {
+	font-size: 4rem;
+    }
+    
+    .step-name {
+	font-size: 1.3rem;
+    }
+    
+    .step-description {
 	font-size: 0.6rem;
     }
 }
@@ -399,27 +473,13 @@ p {
 
 .step1 {
     /* background: #000 url('../images/Idea_BKG-IMG.jpg') no-repeat center; */
-    background: #000 url('../images/Idea_BKG-IMG_High_Res.jpg') no-repeat center;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    max-height: 530px;
+    
 }
 
 .step1 h1, .step1 h2, .step1 h3, .step1 p,
 .step3 h1, .step3 h2, .step3 h3, .step3 p,
 .contact h1, .contact h2, .contact h3, .contact p{
     color: #fff;
-}
-
-.step1 h1, .step2 h1, .step3 h1, .step4 h1 {
-    font-family: 'Lora', serif;
-    font-size: 5em;
-}
-
-.step1 h3, .step2 h3,
-.step3 h3, .step4 h3 {
-    font-size: 20px;
-    font-weight: normal;
 }
 
 .step1 .col-md-5, .step1 .col-md-1,
@@ -429,17 +489,6 @@ p {
     padding-top:17px;
 }
 
-.step2, .step4 {
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
-.step3 {
-    background: #000 url('../images/View_BKG_IMG.jpg') no-repeat center;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    max-height: 500px;
-}
 
 .step4 .btn {
     margin-top: 80px;

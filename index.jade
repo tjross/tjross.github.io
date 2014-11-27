@@ -72,78 +72,106 @@ block content
               h3 4. Hold In Your Hands
     // end of .process
 
-    //
-      #submit.step1(style="background-size:cover;")
-        .container
-          .row
-            .col-md-1.text-right
-              h1#one 1
-            .col-md-5
-              h2 Submit Your Design Idea
-              h3 Get Inspired and Tell Us What You Want to Make
-              p(id="quote").
-                 Fill out a design brief and add pictures and/or sketches to an Idea Board to communicate the vision for your product. If you need some inspiration, let us know, we can help!
-            .col-md-6.text-center(id="mac")
-              a(href="#modal1", data-target="#modal1", role="modal", data-toggle="modal")
-                img(src='icons/submit_your_idea_imac.png')
-    //            
-      #meet.step2
-        .container
-          .row
-            .col-md-1.text-left(id="header2")
-              h1 2
-            .col-md-6.text-center
-              img(src='icons/Start_collaborating_Imac.png')
-            .col-md-5
-              h2.text-right Start Collaborating
-              h3.text-right Meet Your Designer and Start Your Project
-              p.text-right#mobile We will assign you a designer from our network of world-class product designers. Once you start your project, you will be directed to our design center where you&apos;ll communicate directly with your designer.
+    #submit.step-detail.step1
+      .container
+        .row
+          .col-md-12.step-icon
+            img(src='../icons/Lightbulb_icon_75px.png')
+        .row
+          .col-md-6
+            .row
+              .col-md-2.col-xs-2
+                h1.step-number 1
+              .col-md-10.col-xs-10
+                h2.step-name Submit Your Design Idea
+                h3.step-description Get Inspired and Tell Us What You Want to Make
+                p
+                  | Fill out a design brief and add pictures and/or sketches to an Idea Board to communicate the vision for your product. If you need some inspiration, let us know, we can help!
+          .col-md-6.step-picture
+            a(href="#modal1", data-target="#modal1", role="modal", data-toggle="modal")
+              img(src='icons/submit_your_idea_imac.png')
+    // end of .step1
 
-    //
-      #view.step3(style="background-size:cover;")
-        .container
-          .row
-            .col-md-1.text-right
-              h1#three 3
-            .col-md-5
-              h2 View Digital Preview
-              h3 Bring Your Idea to Life on Screen Before Making Your Order
-              p#quote As soon as you and your designer agree on a design, your designer will send across a life-like digital preview of your product. Iterate on your product design until you are in love.
-            .col-md-6.text-center
+    #meet.step-detail.step2
+      .container
+        .row
+          .col-md-12.step-icon
+            img(src='../icons/Chat_icon_non_hover.png')
+        .row
+          .col-md-6.step-picture
+            a(href="#modal1", data-target="#modal1", role="modal", data-toggle="modal")
+              img(src='icons/submit_your_idea_imac.png')
+          .col-md-6
+            .row
+              .col-md-10.col-xs-10
+                h2.step-name Start Collaborating
+                h3.step-description Meet Your Designer and Start Your Project
+                p
+                  | We will assign you a designer from our network of world-class product designers. Once you start your project, you will be directed to our design center where you&apos;ll communicate directly with your designer.
+              .col-md-2.col-xs-2
+                h1.step-number 2
+    // end of .step2
+
+    #submit.step-detail.step3
+      .container
+        .row
+          .col-md-12.step-icon
+            img(src='../icons/ScreenIcon_icon_75px.png')
+        .row
+          .col-md-6
+            .row
+              .col-md-2.col-xs-2
+                h1.step-number 3
+              .col-md-10.col-xs-10
+                h2.step-name View Digital Preview
+                h3.step-description Bring Your Idea to Life on Screen Before Making Your Order
+                p
+                  | As soon as you and your designer agree on a design, your designer will send across a life-like digital preview of your product. Iterate on your product design until you are in love.
+          .col-md-6.step-picture
+            a(href="#modal1", data-target="#modal1", role="modal", data-toggle="modal")
               img(src='icons/view_digital_product.png')
+    // end of .step3
 
-    //
-      #hold.step4
-        .container
-          .row
-            .col-md-1.text-left
-              h1 4
-            .col-md-6.text-center
-              img(src='icons/holdinyourhandimac.png')
-            .col-md-5
-              h2.text-right Hold It In Your Hands 
-              h3.text-right Choose Material and Ship the Design to Your Door
-              p.text-right#quote Once you agree on a final design, just choose the material and finish you want your product in and get it delivered to your door. You can literally hold your idea in your hands.
-          .row
-            .col-md-4.col-md-offset-4.btn.btn-lg.btn-primary#getstartedbutton
+    #hold.step-detail.step4
+      .container
+        .row
+          .col-md-12.step-icon
+            img(src='../icons/Holdinyourhand_icon_non_hover.png')
+        .row
+          .col-md-6.step-picture
+            a(href="#modal1", data-target="#modal1", role="modal", data-toggle="modal")
+              img(src='icons/submit_your_idea_imac.png')
+          .col-md-6
+            .row
+              .col-md-10.col-xs-10
+                h2.step-name Hold It In Your Hands 
+                h3.step-description Choose Material and Ship the Design to Your Door
+                p
+                  | Once you agree on a final design, just choose the material and finish you want your product in and get it delivered to your door. You can literally hold your idea in your hands.
+              .col-md-2.col-xs-2
+                h1.step-number 4
+            //
+              .col-md-4.col-md-offset-4.btn.btn-lg.btn-primary#getstartedbutton
               | Get Started
-      .contact
-        .container
-          h2.text-center Want To Know More?
+    // end of .step4
+    
+    .contact
+      .container
+        h2.text-center Want To Know More?
           .row
             .col-md-2.col-md-offset-4
               .btn.btn-lg.btn-block.more-info FAQ
             .col-md-2
               .btn.btn-lg.btn-block.more-info Contact Us
-        .row.text-center
-          a(href='https://www.facebook.com/pages/43Layers/273568439486440')
-            img(src='icons/Facebook_icon_50px.png')
-          a(href='https://twitter.com/43Layers')
-            img(src='icons/Twitter_icon_50px.png')
-        a(href='http://instagram.com/43layers')
-          img(src='icons/Instagram_icon_50px.png')
-        a(href='http://www.pinterest.com/43layers')
-          img(src='icons/Pintrest_icon_50px.png')
+          .row.text-center
+            a(href='https://www.facebook.com/pages/43Layers/273568439486440')
+              img(src='icons/Facebook_icon_50px.png')
+            a(href='https://twitter.com/43Layers')
+              img(src='icons/Twitter_icon_50px.png')
+            a(href='http://instagram.com/43layers')
+              img(src='icons/Instagram_icon_50px.png')
+            a(href='http://www.pinterest.com/43layers')
+              img(src='icons/Pintrest_icon_50px.png')
 
   include ./partials/_footer.jade
 
