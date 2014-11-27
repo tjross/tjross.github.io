@@ -443,7 +443,7 @@ h3 {
 .footer-links li {
     margin: 0;
     padding: 0;
-    width: 25%;
+    width: 24%;
     text-align: center;
     display: inline-block;
 }
@@ -552,6 +552,10 @@ h3 {
 
     .btn-newsletter {
 	width: 100%;
+    }
+
+    .footer-links li a {
+	font-size: 0.8rem;
     }
 
     .copy {
