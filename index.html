@@ -20,7 +20,7 @@
       <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
         <div class="container">
           <div class="navbar-header">
-            <button type="button" data-toggle="collapse" data-target="#collapsed-nav" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.html" class="navbar-brand"><img src="icons/Main_nav_logo_blk_180px.png" height="50px" width="150px"></a>
+            <button type="button" data-toggle="collapse" data-target="#collapsed-nav" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.html" class="navbar-brand"><img src="icons/Main_nav_logo_blk_180px.png" height="50px" width="170px"></a>
           </div>
           <div id="collapsed-nav" class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
@@ -188,105 +188,166 @@
           </div>
         </div>
         <!-- end of .creations-->
-      </div>
-      <!--    
-      .testimonial
-      // end of .testimonial
-      
-      -->
-      <!--
-      .process
-        .container.howitworks
-          h2.text-center#howitworks How It Works
-            .row.text-center
-              .col-md-3
-                h3 1. Submit Your Idea
-                a.submit.center-block(href='#submit') &nbsp;
-              .col-md-3
-                h3 2. Meet Your Designer
-                a.meet.center-block(href='#meet') &nbsp;
-              .col-md-3
-                h3 3. View Digital Preview
-                a.view.center-block(href='#view') &nbsp;
-              .col-md-3
-                h3 4. Hold In Your Hands
-                a.hold.center-block(href='#hold') &nbsp;
-      
-      //
-        #submit.step1(style="background-size:cover;")
-          .container
-            .row
-              .col-md-1.text-right
-                h1#one 1
-              .col-md-5
-                h2 Submit Your Design Idea
-                h3 Get Inspired and Tell Us What You Want to Make
-                p(id="quote").
-                   Fill out a design brief and add pictures and/or sketches to an Idea Board to communicate the vision for your product. If you need some inspiration, let us know, we can help!
-              .col-md-6.text-center(id="mac")
-                a(href="#modal1", data-target="#modal1", role="modal", data-toggle="modal")
-                  img(src='icons/submit_your_idea_imac.png')
-      //            
-        #meet.step2
-          .container
-            .row
-              .col-md-1.text-left(id="header2")
-                h1 2
-              .col-md-6.text-center
-                img(src='icons/Start_collaborating_Imac.png')
-              .col-md-5
-                h2.text-right Start Collaborating
-                h3.text-right Meet Your Designer and Start Your Project
-                p.text-right#mobile We will assign you a designer from our network of world-class product designers. Once you start your project, you will be directed to our design center where you&apos;ll communicate directly with your designer.
-      
-      //
-        #view.step3(style="background-size:cover;")
-          .container
-            .row
-              .col-md-1.text-right
-                h1#three 3
-              .col-md-5
-                h2 View Digital Preview
-                h3 Bring Your Idea to Life on Screen Before Making Your Order
-                p#quote As soon as you and your designer agree on a design, your designer will send across a life-like digital preview of your product. Iterate on your product design until you are in love.
-              .col-md-6.text-center
-                img(src='icons/view_digital_product.png')
-      
-      //
-        #hold.step4
-          .container
-            .row
-              .col-md-1.text-left
-                h1 4
-              .col-md-6.text-center
-                img(src='icons/holdinyourhandimac.png')
-              .col-md-5
-                h2.text-right Hold It In Your Hands 
-                h3.text-right Choose Material and Ship the Design to Your Door
-                p.text-right#quote Once you agree on a final design, just choose the material and finish you want your product in and get it delivered to your door. You can literally hold your idea in your hands.
-            .row
-              .col-md-4.col-md-offset-4.btn.btn-lg.btn-primary#getstartedbutton
+        <div class="testimonial">
+          <h2>What Our Customers Are Saying</h2>
+          <div class="container">
+            <p>&ldquo; Thank you SO much for the picture!!! I can't wait to see it in person! I can't believe the detail of the work you can do! Love! So excited! Thank you so much! Also, excited to work with you on the other projects! &rdquo;</p>
+            <p>&mdash; Meghan M</p>
+          </div>
+        </div>
+        <!-- end of .testimonial-->
+        <div class="process">
+          <h2>How It Works</h2>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3"><a href="#submit" class="step submit center-block"></a>
+                <h3>1. Submit Your Idea</h3>
+              </div>
+              <div class="col-md-3"><a href="#meet" class="step meet center-block"></a>
+                <h3>2. Meet Your Designer</h3>
+              </div>
+              <div class="col-md-3"><a href="#view" class="step view center-block"></a>
+                <h3>3. View Digital Preview</h3>
+              </div>
+              <div class="col-md-3"><a href="#hold" class="step hold center-block"></a>
+                <h3>4. Hold In Your Hands</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of .process-->
+        <div id="submit" class="step-detail step1">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 step-icon"><img src="../icons/Lightbulb_icon_75px.png"></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-md-2 col-xs-2">
+                    <h1 class="step-number">1</h1>
+                  </div>
+                  <div class="col-md-10 col-xs-10">
+                    <h2 class="step-name">Submit Your Design Idea</h2>
+                    <h3 class="step-description">Get Inspired and Tell Us What You Want to Make</h3>
+                    <p class="step-paragraph">Fill out a design brief and add pictures and/or sketches to an Idea Board to communicate the vision for your product. If you need some inspiration, let us know, we can help!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 step-picture"><a href="#modal1" data-target="#modal1" role="modal" data-toggle="modal"><img src="icons/submit_your_idea_imac.png"></a></div>
+            </div>
+          </div>
+        </div>
+        <!-- end of .step1-->
+        <div id="meet" class="step-detail step2">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 step-icon"><img src="../icons/Chat_icon_non_hover.png"></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 step-picture"><a href="#modal1" data-target="#modal1" role="modal" data-toggle="modal"><img src="icons/submit_your_idea_imac.png"></a></div>
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-md-10 col-xs-10">
+                    <h2 class="step-name">Start Collaborating</h2>
+                    <h3 class="step-description">Meet Your Designer and Start Your Project</h3>
+                    <p class="step-paragraph">We will assign you a designer from our network of world-class product designers. Once you start your project, you will be directed to our design center where you&apos;ll communicate directly with your designer.</p>
+                  </div>
+                  <div class="col-md-2 col-xs-2">
+                    <h1 class="step-number">2</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of .step2-->
+        <div id="submit" class="step-detail step3">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 step-icon"><img src="../icons/ScreenIcon_icon_75px.png"></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-md-2 col-xs-2">
+                    <h1 class="step-number">3</h1>
+                  </div>
+                  <div class="col-md-10 col-xs-10">
+                    <h2 class="step-name">View Digital Preview</h2>
+                    <h3 class="step-description">Bring Your Idea to Life on Screen Before Making Your Order</h3>
+                    <p class="step-paragraph">As soon as you and your designer agree on a design, your designer will send across a life-like digital preview of your product. Iterate on your product design until you are in love.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 step-picture"><a href="#modal1" data-target="#modal1" role="modal" data-toggle="modal"><img src="icons/view_digital_product.png"></a></div>
+            </div>
+          </div>
+        </div>
+        <!-- end of .step3-->
+        <div id="hold" class="step-detail step4">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 step-icon"><img src="../icons/Holdinyourhand_icon_non_hover.png"></div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 step-picture"><a href="#modal1" data-target="#modal1" role="modal" data-toggle="modal"><img src="icons/submit_your_idea_imac.png"></a></div>
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-md-10 col-xs-10">
+                    <h2 class="step-name">Hold It In Your Hands </h2>
+                    <h3 class="step-description">Choose Material and Ship the Design to Your Door</h3>
+                    <p class="step-paragraph">Once you agree on a final design, just choose the material and finish you want your product in and get it delivered to your door. You can literally hold your idea in your hands.</p>
+                  </div>
+                  <div class="col-md-2 col-xs-2">
+                    <h1 class="step-number">4</h1>
+                  </div>
+                </div>
+                <!--
+                .col-md-4.col-md-offset-4.btn.btn-lg.btn-primary#getstartedbutton
                 | Get Started
-        .contact
-          .container
-            h2.text-center Want To Know More?
-            .row
-              .col-md-2.col-md-offset-4
-                .btn.btn-lg.btn-block.more-info FAQ
-              .col-md-2
-                .btn.btn-lg.btn-block.more-info Contact Us
-          .row.text-center
-            a(href='https://www.facebook.com/pages/43Layers/273568439486440')
-              img(src='icons/Facebook_icon_50px.png')
-            a(href='https://twitter.com/43Layers')
-              img(src='icons/Twitter_icon_50px.png')
-          a(href='http://instagram.com/43layers')
-            img(src='icons/Instagram_icon_50px.png')
-          a(href='http://www.pinterest.com/43layers')
-            img(src='icons/Pintrest_icon_50px.png')
-      
-      -->
-      <div class="footer"></div>
+                -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of .step4-->
+        <div class="contact">
+          <h2>Want To Know More?</h2>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 col-md-offset-3">
+                <div class="btn btn-lg btn-block more-info">FAQ</div>
+              </div>
+              <div class="col-md-3">
+                <div class="btn btn-lg btn-block more-info">Contact Us</div>
+              </div>
+            </div>
+            <div class="row text-center"><a href="https://www.facebook.com/pages/43Layers/273568439486440"><img src="icons/Facebook_icon_50px.png"></a><a href="https://twitter.com/43Layers"><img src="icons/Twitter_icon_50px.png"></a><a href="http://instagram.com/43layers"><img src="icons/Instagram_icon_50px.png"></a><a href="http://www.pinterest.com/43layers"><img src="icons/Pintrest_icon_50px.png"></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <ul class="footer-links">
+                <li><a horef="privacy.html">Privacy</a></li>
+                <li><a href="terms.html">Terms</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <form class="form-inline form-newsletter">
+                <input type="text" placeholder="Sign up for emails" class="form-control">
+                <button class="btn btn-primary btn-newsletter">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <p class="copy">&copy; 2014 43 Layers Photography provided by Sarah Kathleen</p>
+      </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
