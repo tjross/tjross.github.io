@@ -34,6 +34,10 @@ h2 {
     font-family: 'Bentham', sans-serif;
 }
 
+p {
+    font-family: 'Lato', sans-serif;
+}
+
 
 /* HEADINGS */
 
@@ -456,6 +460,13 @@ h3 {
     margin-top: 20px;
 }
 
+/* ABOUT */
+
+.about {
+    margin: 50px 0;
+}
+
+
 
 /* SUBMIT YOUR IDEA FORM */
 
@@ -545,6 +556,10 @@ h3 {
 
     .copy {
 	font-size: 0.6rem;
+    }
+
+    .about > p {
+	font-size: 1rem;
     }
 }
 
