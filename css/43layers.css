@@ -460,12 +460,33 @@ h3 {
     margin-top: 20px;
 }
 
+
 /* ABOUT */
 
 .about {
     margin: 50px 0;
 }
 
+
+/* PRIVACY */
+
+.privacy {
+    margin: 50px 0;
+}
+
+
+/* TERMS AND CONDITIONS */
+
+.terms {
+    margin: 50px 0;
+}
+
+
+/* FAQ */
+
+.faq {
+    margin: 50px 0;
+}
 
 
 /* SUBMIT YOUR IDEA FORM */
@@ -562,7 +583,9 @@ h3 {
 	font-size: 0.6rem;
     }
 
-    .about > p {
+    .about > p,
+    .privacy > p,
+    .terms > p {
 	font-size: 1rem;
     }
 }

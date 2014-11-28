@@ -6,111 +6,133 @@ block title
 block content
   include ./partials/_header.jade
 
-  .faq(style="height:1500px;")
-      .container#main
-         h1.text-center FAQ
-         .col-md-12(style="margin-top:25px;")
-          .panel-group#accordion(role="tablist", aria-multiselctable="true", data-parent="#accordion", aria-expanded="false")
-            .panel.panel-default
-              .panel-heading
-                h4.panel-title 
-                  a(href="#general", data-toggle="collapse", aria-expanded="true", aria-controls="collapseGeneral") General
-              .panel-collapse.collapse.out#general(role="tabpanel", aria-labeledby="collapseGeneral")
-                .panel-body
+  .faq()
+    .container#main
+        h1.text-center FAQ
+          .col-md-12
+           .panel-group#accordion(role="tablist", aria-multiselctable="true", data-parent="#accordion", aria-expanded="false")
+             .panel.panel-default
+               .panel-heading
+                  h4.panel-title 
+                    a(href="#general", data-toggle="collapse", aria-expanded="true", aria-controls="collapseGeneral") General
+                .panel-collapse.collapse.out#general(role="tabpanel", aria-labeledby="collapseGeneral")
+                  .panel-body
+                    // What is 43 Layers?
+                    li.panel-group#accordion(role="tablist", aria-multiselctable="true", data-parent="#accordion", aria-expanded="false")
+                      .panel.panel-default
+                        .panel-heading(role="tab", id="headingFifteen")
+                          h4.panel-title
+                            a(href="#faq15", data-toggle="collapse", aria-expaned="true", aria-controls="collapseFifteen" ) What is 43Layers?
+                        .panel-collapse.collapse.out#faq15(role="tabpanel", aria-labeledby="headingFifteen") 
+                          .panel-body
+                            p
+                              | 43Layers is the only marketplace and community where users can design and make truly custom products that are both high quality and affordable.
+                    // How does the process work?
+                    li.panel-group#accordion(role="tablist", aria-multiselctable="true", data-parent="#accordion", aria-expanded="false")
+                      .panel.panel-default#accordion(role="tablist")
+                        .panel-heading(role="tab", id="headingSixteen")
+                          h4.panel-title
+                            a(href="#faq16", data-toggle="collapse", aria-expanded="true", aria-controls="collapseSixteen") How does the process work?
+                        .panel-collapse.collapse.out#faq16(role="tabpanel", aria-labeledby="headingSixteen") 
+                          .panel-body
+                            ol
+                              li The first step of the process is filling out your design brief. As soon as you know what you want to make, click Get Started and start filling out our design brief where you will answer a series of questions describing your product and add any pictures or sketches you think that will help articulate what you are trying to make. When you finish, click “submit” and we will connect you with a world-class industrial designer who will help bring your product to life. 
+                              li Once you are assigned to a designer, you will talk about the product you want to make, asking any questions you might have and communicating anything else you need to say about the product to make sure you and your designer are on the same page.
+                              li In the next stage of the process, your designer will provide a digital rendering or preview of your product. This will look very similar to the final product so this is your chance to tell the designer what you like and what you would like to change. You and your designer will then iterate on the design until you are in love with your design.
+                              li Finally, once you are happy with the design, you choose the material you want it made in and finalize the order. You will then be charged, the item will be sent to manufacturing and then shipped to you.
+                    // What if I don't have any design experience whatsoever?
+                    li.panel-group#accordion(role="tablist", aria-multiselctable="true", data-parent="#accordion", aria-expanded="false")
+                      .panel.panel-default#accordion(role="tablist")
+                        .panel-heading(role="tab", id="headingSeventeen")
+                          h4.panel-title
+                            a(href="#faq17", data-toggle="collapse", aria-expanded="true", aria-controls="collapseSeventeen") What if I don't have any design experience whatsoever?
+                        .panel-collapse.collapse.out#faq17(role="tabpanel", aria-labeledby="headingSeventeen")
+                          .panel-body
+                            p
+                              | You are in luck. At 43Layers we believe that the most important part of design is the meaning behind the product, not the drawing, plan or model itself. It is our goal to enable the design and manufacturing of products specifically for YOU, so whether you majored in Industrial Design or have never touched any design software in your life, our goal is to make design and manufacturing easy and accessible so you can bring your ideas and the meaning behind them to life.
+                    // Why is 43 layers so good at customization? 
+                    li.panel-group#accordion(role="tablist", aria-multiselctable="true", data-parent="#accordion", aria-expanded="false")
+                      .panel.panel-default#accordion(role="tablist")
+                        .panel-heading(role="tab", id="headingEighteen")
+                          h4.panel-title
+                            a(href="#faq18", data-toggle="collapse", aria-expanded="true", aria-controls="collapseEighteen") Why is 43 layers so good at customization? 
+                        .panel-collapse.collapse.out#faq18(role="tabpanel", aria-labeledby="headingEighteen")
+                          .panel-body 
+                            p
+                              | At 43Layers, all of our products are made using digital fabrication technology. This means all of our products are designed with computer aided design software and then manufactured with software powered manufacturing tools (for now primarily 3D printing and laser cutting). Just like an MP3 is a digital version of a song, we create designs that are digital versions of a physical product. We then use 3D printing and laser cutting and turn those designs into physical objects. These products are infinitely easier to customize than with traditional manufacturing because the product design itself is digital so any customization we need to do can be done with software and it will be manufactured precisely to spec.
+                    // How does 3d printing work?
+                    li.panel-group#accordion(role="tablist", aria-multiselctable="true", data-parent="#accordion", aria-expanded="false")
+                      .panel.panel-default#accordion(role="tablist")
+                        .panel-heading(role="tab", id="headingNineteen")
+                          h4.panel-title
+                            a(href="#faq19", data-toggle="collapse", aria-expanded="true", aria-controls="collapseNineteen") How does 3d printing work?
+                        .panel-collapse.collapse.out#faq19(role="tabpanel", aria-labeledby="headingNineteen")
+                          .panel-body
+                            p
+                              | 3D Printing takes digital files and turns them into physical products. It is often referred to as additive manufacturing, as the product is built up layer by layer in the material of your choosing. 3D Printing refers to several different processes that are applied based on the specific material type, including the most popular, selective laser sintering.
+                    // How does laser cutting work?
+                    li.panel-group#accordion(role="tablist", aria-multiselectable="true")
+                      .panel.panel-default
+                        .panel-heading(role="tab", id="headingOne")
+                          h4.panel-title
+                            a(href="#lasercutting", data-toggle="collapse", data-parent="#accordion", aria-expanded="false", aria-controls="collapseOne") How does laser cutting work?
+                        .panel-collapse.collapse.out#lasercutting(role="tabpanel", aria-labelledby="headingOne")
+                          .panel-body
+                            p
+                              | Laser cutting is a precise method of cutting a design from a given material using a computer aided design (CAD) file to guide it. Laser cutting uses a computer to direct the output high-power laser at a given material to be cut. The material then melts, burns or vaporizes leaving an edge with a high-quality finish.
+                    // What type of material can I 3D print and Laser Cut with?
+                    li.panel-group#accordion(role="tablist", aria-multiselectable="true")
+                      .panel.panel-default
+                        .panel-heading(role="tab", id="headingTwo")
+                          h4.panel-title
+                            a(href="#faq2", data-toggle="collapse", aria-expanded="false", aria-controls="collapseTwo") What type of material can I 3D print and Laser Cut with?
+                        .panel-collapse.collapse.out#faq2(role="tabpanel", aria-labelledby="headingTwo")
+                          .panel-body
+                            p
+                              | Today our manufacturing partners allow for a variety of material options and they add new ones regularly. For 3D printing, the following materials are currently available: Plastic, Wax, Nylon, Sandstone, Ceramic, Steel (Various finishes), Bronze (Various finishes), Brass (Various finishes), Silver (Various finishes), and 14K Gold (Various finishes) and platinum. For laser cutting, the following materials are available today: wood (various types and finishes), acrylic, paper, leather and fabric.
 
-                  li.panel-group#accordion(role="tablist", aria-multiselctable="true", data-parent="#accordion", aria-expanded="false")
-                   .panel.panel-default
-                      .panel-heading(role="tab", id="headingFifteen")
-                        h4.panel-title
-                          a(href="#faq15", data-toggle="collapse", aria-expaned="true", aria-controls="collapseFifteen" ) What is 43Layers?
-                       .panel-collapse.collapse.out#faq15(role="tabpanel", aria-labeledby="headingFifteen") 
-                        .panel-body
-                          | 43Layers is the only marketplace and community where users can design and make truly custom products that are both high quality and affordable. 
-                  li.panel-group#accordion(role="tablist", aria-multiselctable="true", data-parent="#accordion", aria-expanded="false")
-                   .panel.panel-default#accordion(role="tablist")
-                    .panel-heading(role="tab", id="headingSixteen")
-                      h4.panel-title
-                        a(href="#faq16", data-toggle="collapse", aria-expanded="true", aria-controls="collapseSixteen") How does the process work?
-                    .panel-collapse.collapse.out#faq16(role="tabpanel", aria-labeledby="headingSixteen") 
-                      .panel-body
-                        ul
-                          li The first step of the process is filling out your design brief. As soon as you know what you want to make, click Get Started and start filling out our design brief where you will answer a series of questions describing your product and add any pictures or sketches you think that will help articulate what you are trying to make. When you finish, click “submit” and we will connect you with a world-class industrial designer who will help bring your product to life. 
-                          li Once you are assigned to a designer, you will talk about the product you want to make, asking any questions you might have and communicating anything else you need to say about the product to make sure you and your designer are on the same page.
-                          li In the next stage of the process, your designer will provide a digital rendering or preview of your product. This will look very similar to the final product so this is your chance to tell the designer what you like and what you would like to change. You and your designer will then iterate on the design until you are in love with your design.
-                          li Finally, once you are happy with the design, you choose the material you want it made in and finalize the order. You will then be charged, the item will be sent to manufacturing and then shipped to you.
-                  li.panel-group#accordion(role="tablist", aria-multiselctable="true", data-parent="#accordion", aria-expanded="false")
-                   .panel.panel-default#accordion(role="tablist")
-                    .panel-heading(role="tab", id="headingSeventeen")
-                      h4.panel-title
-                        a(href="#faq17", data-toggle="collapse", aria-expanded="true", aria-controls="collapseSeventeen") What if I don't have any design experience whatsoever?
-                     .panel-collapse.collapse.out#faq17(role="tabpanel", aria-labeledby="headingSeventeen")
-                      .panel-body
-                        | You are in luck. At 43Layers we believe that the most important part of design is the meaning behind the product, not the drawing, plan or model itself. It is our goal to enable the design and manufacturing of products specifically for YOU, so whether you majored in Industrial Design or have never touched any design software in your life, our goal is to make design and manufacturing easy and accessible so you can bring your ideas and the meaning behind them to life.
-                  li.panel-group#accordion(role="tablist", aria-multiselctable="true", data-parent="#accordion", aria-expanded="false")
-                   .panel.panel-default#accordion(role="tablist")
-                    .panel-heading(role="tab", id="headingEighteen")
-                      h4.panel-title
-                        a(href="#faq18", data-toggle="collapse", aria-expanded="true", aria-controls="collapseEighteen") Why is 43 layers so good at customization? 
-                    .panel-collapse.collapse.out#faq18(role="tabpanel", aria-labeledby="headingEighteen")
-                      .panel-body 
-                        | At 43Layers, all of our products are made using digital fabrication technology. This means all of our products are designed with computer aided design software and then manufactured with software powered manufacturing tools (for now primarily 3D printing and laser cutting). Just like an MP3 is a digital version of a song, we create designs that are digital versions of a physical product. We then use 3D printing and laser cutting and turn those designs into physical objects. These products are infinitely easier to customize than with traditional manufacturing because the product design itself is digital so any customization we need to do can be done with software and it will be manufactured precisely to spec.
-                  li.panel-group#accordion(role="tablist", aria-multiselctable="true", data-parent="#accordion", aria-expanded="false")
-                     .panel.panel-default#accordion(role="tablist")
-                      .panel-heading(role="tab", id="headingNineteen")
-                       h4.panel-title
-                        a(href="#faq19", data-toggle="collapse", aria-expanded="true", aria-controls="collapseNineteen") How does 3d printing work?
-                      .panel-collapse.collapse.out#faq19(role="tabpanel", aria-labeledby="headingNineteen")
-                       .panel-body
-                        | 3D Printing takes digital files and turns them into physical products. It is often referred to as additive manufacturing, as the product is built up layer by layer in the material of your choosing. 3D Printing refers to several different processes that are applied based on the specific material type, including the most popular, selective laser sintering.
-                  li.panel-group#accordion(role="tablist", aria-multiselectable="true")
-                   .panel.panel-default
-                    .panel-heading(role="tab", id="headingOne")
-                      h4.panel-title
-                        a(href="#lasercutting", data-toggle="collapse", data-parent="#accordion", aria-expanded="false", aria-controls="collapseOne") How does laser cutting work?
-                    .panel-collapse.collapse.out#lasercutting(role="tabpanel", aria-labelledby="headingOne")
-                      .panel-body
-                          | Laser cutting is a precise method of cutting a design from a given material using a computer aided design (CAD) file to guide it. Laser cutting uses a computer to direct the output high-power laser at a given material to be cut. The material then melts, burns or vaporizes leaving an edge with a high-quality finish.
-                  li.panel-group#accordion(role="tablist", aria-multiselectable="true")
-                     .panel.panel-default
-                      .panel-heading(role="tab", id="headingTwo")
-                        h4.panel-title
-                          a(href="#faq2", data-toggle="collapse", aria-expanded="false", aria-controls="collapseTwo") What type of material can I 3D print and Laser Cut with?
-                      .panel-collapse.collapse.out#faq2(role="tabpanel", aria-labelledby="headingTwo")
-                        .panel-body
-                          | Today our manufacturing partners allow for a variety of material options and they add new ones regularly.  For 3D printing, the following materials are currently available: Plastic, Wax, Nylon, Sandstone, Ceramic, Steel (Various finishes), Bronze (Various finishes), Brass (Various finishes), Silver (Various finishes), and 14K Gold (Various finishes) and platinum.  For laser cutting, the following materials are available today: wood (various types and finishes), acrylic, paper, leather and fabric.
-                   li.panel-group#accordion(role="tablist", aria-multiselctable="true", data-parent="#accordion", aria-expanded="false")
-                     .panel.panel-default
-                      .panel-heading(role="tab", id="headingThree")
-                        h4.panel-title
-                          a(href="#faq3", data-toggle="collapse", aria-expanded="false", aria-controls="collapseThree") Who designs these projects?
-                      .panel-collapse.collapse.out#faq3(role="tabpanel", aria-labelledby="headingThree")
-                        .panel-body
-                          | All 43Layers products are designed by our community members in conjunction with our network of world-class freelance industrial designers.
-                  li.panel-group#accordion(role="tablist", aria-multiselectable="true", data-parent="#accordion", aria-expanded="false")
-                   .panel.panel-default
-                    .panel-heading(role="tab", id="headingFour")
-                      h4.panel-title
-                        a(href="#faq4", data-toggle="collapse", aria-expanded="true", aria-controls="collapseFour") Where are your production facilities located?
-                    .panel-collapse.collapse.out#faq4(role="tabpanel", aria-labelledby="headingFour")
-                      .panel-body
-                        | Today our products are made by best-in-class manufacturing partners around the world who use industrial size 3D Printers and laser cutters to create your products, often in combination with post-processing, like dyeing and polishing. When we can, we try to produce locally to ensure you get your order in a timely manner, at the lowest possible cost, and with a minimal carbon footprint. 
-                  li.panel-group#accordion(role="tablist", aria-multiselectable="true", data-parent="#accordion", aria-expanded="false")
-                   .panel.panel-default
-                      .panel-heading(role="tab", id="headingFive")
-                        h4.panel-title
-                          a(href="#faq5", data-toggle="collapse", aria-expanded="true", aria-controls="collapseFive") How long does the process take?
-                      .panel-collapse.collapse.out#faq5(role="tabpanel", aria-labelledby="headingFive")
-                        .panel-body
-                          | We recommend you give the process at least 4-6 weeks total; 3-4 weeks for manufacturing and shipping and 1-2 weeks for the design). In many cases, the product can ship out faster than our suggested lead-time and we are constantly working with our suppliers to try to speed the process up.
-                  li.panel-group#accordion(role="tablist", aria-multiselctable="true", data-parent="#accordion", aria-expanded="false")
-                    .panel.panel-default
-                     .panel-heading(role="tab", id="headingEight")
-                        h4.panel-title
-                          a(href="#faq8", data-toggle="collapse", aria-expanded="true", aria-controls="collapseEight") I loved a design used by another user. Can I order the same thing?
-                    .panel-collapse.collapse.out#faq8(role="tabpanel", aria-labeledby="headingEight")
-                      .panel-body
-                        | Yes, in most cases, if you like a design made by another user, you can order the same product; however, you can also add your own personal touch if you like. We encourage it 
-          .panel-group#accordion(role="tablist", aria-multiselctable="true", data-parent="#accordion", aria-expanded="false")
+                    // Who designs these projects?
+                    li.panel-group#accordion(role="tablist", aria-multiselctable="true", data-parent="#accordion", aria-expanded="false")
+                      .panel.panel-default
+                        .panel-heading(role="tab", id="headingThree")
+                          h4.panel-title
+                            a(href="#faq3", data-toggle="collapse", aria-expanded="false", aria-controls="collapseThree") Who designs these projects?
+                        .panel-collapse.collapse.out#faq3(role="tabpanel", aria-labelledby="headingThree")
+                          .panel-body
+                            p
+                              | All 43Layers products are designed by our community members in conjunction with our network of world-class freelance industrial designers.
+                    // Where are your production facilities located?
+                    li.panel-group#accordion(role="tablist", aria-multiselectable="true", data-parent="#accordion", aria-expanded="false")
+                      .panel.panel-default
+                        .panel-heading(role="tab", id="headingFour")
+                          h4.panel-title
+                            a(href="#faq4", data-toggle="collapse", aria-expanded="true", aria-controls="collapseFour") Where are your production facilities located?
+                        .panel-collapse.collapse.out#faq4(role="tabpanel", aria-labelledby="headingFour")
+                          .panel-body
+                            p
+                              | Today our products are made by best-in-class manufacturing partners around the world who use industrial size 3D Printers and laser cutters to create your products, often in combination with post-processing, like dyeing and polishing. When we can, we try to produce locally to ensure you get your order in a timely manner, at the lowest possible cost, and with a minimal carbon footprint. 
+                    // How long does the process take?
+                    li.panel-group#accordion(role="tablist", aria-multiselectable="true", data-parent="#accordion", aria-expanded="false")
+                      .panel.panel-default
+                        .panel-heading(role="tab", id="headingFive")
+                          h4.panel-title
+                            a(href="#faq5", data-toggle="collapse", aria-expanded="true", aria-controls="collapseFive") How long does the process take?
+                        .panel-collapse.collapse.out#faq5(role="tabpanel", aria-labelledby="headingFive")
+                          .panel-body
+                            p
+                              | We recommend you give the process at least 4-6 weeks total; 3-4 weeks for manufacturing and shipping and 1-2 weeks for the design). In many cases, the product can ship out faster than our suggested lead-time and we are constantly working with our suppliers to try to speed the process up.
+                    // I loved a design used by another user. Can I order the same thing?
+                    li.panel-group#accordion(role="tablist", aria-multiselctable="true", data-parent="#accordion", aria-expanded="false")
+                      .panel.panel-default
+                        .panel-heading(role="tab", id="headingEight")
+                          h4.panel-title
+                            a(href="#faq8", data-toggle="collapse", aria-expanded="true", aria-controls="collapseEight") I loved a design used by another user. Can I order the same thing?
+                        .panel-collapse.collapse.out#faq8(role="tabpanel", aria-labeledby="headingEight")
+                          .panel-body
+                            p
+                              | Yes, in most cases, if you like a design made by another user, you can order the same product; however, you can also add your own personal touch if you like. We encourage it.
+           // Ordering and Payment
+           .panel-group#accordion(role="tablist", aria-multiselctable="true", data-parent="#accordion", aria-expanded="false")
             .panel.panel-default
               .panel-heading
                 h4.panel-title 
@@ -191,7 +213,6 @@ block content
                      .panel-collapse.collapse.out#faq14(role="tabpanel", aria-labeledby="headingFourteen")
                         .panel-body
                           | Please get in touch with our customer service team at contact@43layers.com and they'll take over from there!
-              
                   
                   li.panel-group#accordion(role="tablist", aria-multiselctable="true", data-parent="#accordion", aria-expanded="false")
                    .panel.panel-default
@@ -222,6 +243,5 @@ block content
                      .panel-collapse.collapse.out#faq25(role="tabpanel", aria-labeledby="headingNine")
                       .panel-body
                         h2 We're happy to help! Just shoot us an email at contact@43layers.com.
-
 
     include ./partials/_footer.jade
