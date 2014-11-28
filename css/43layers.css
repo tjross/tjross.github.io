@@ -281,7 +281,7 @@ h3 {
 /* STEP DETAILS */
 
 .step-detail {
-    padding: 40px;
+    padding: 50px;
 }
 
 .step-detail h1 {
@@ -326,8 +326,8 @@ h3 {
 
 .step1 {
     color: #fff;
-    background-size: cover;
     background: url('../images/Idea_BKG-IMG_High_Res.jpg') no-repeat center;
+    background-size: cover;
 }
 
 .step1,
@@ -350,8 +350,8 @@ h3 {
 
 .step3 {
     color: #fff;
-    background-size: cover;
     background: url('../images/View_BKG_IMG.jpg') no-repeat center;
+    background-size: cover;
 }
 
 .step3,
@@ -464,21 +464,36 @@ h3 {
 /* ABOUT */
 
 .about {
+    text-align: center;
     margin: 50px 0;
+}
+
+.about h2 {
+    margin-top: 50px;
 }
 
 
 /* PRIVACY */
 
 .privacy {
+    text-align: center;
     margin: 50px 0;
+}
+
+.privacy h2 {
+    margin-top: 50px;
 }
 
 
 /* TERMS AND CONDITIONS */
 
 .terms {
+    text-align: center;
     margin: 50px 0;
+}
+
+.terms h2 {
+    margin-top: 50px;
 }
 
 
@@ -539,6 +554,11 @@ h3 {
 	font-size: 0.6rem;
     }
 
+    /* Makes inline form works on mobile viewports */
+    .form-inline  .form-control {
+	width: auto;
+    }
+
     /*
     .testimonial {
 	width: 100%;
@@ -560,19 +580,19 @@ h3 {
     }
     
     .step-name {
-	font-size: 1rem;
+	font-size: 1.2rem;
     }
     
     .step-description {
+	font-size: 0.9rem;
+    }
+
+    .step-paragraph {
 	font-size: 0.8rem;
     }
 
     .form-newsletter {
 	padding-top: 10px;
-    }
-
-    .btn-newsletter {
-	width: 100%;
     }
 
     .footer-links li a {
