@@ -281,7 +281,7 @@ h3 {
 /* STEP DETAILS */
 
 .step-detail {
-    padding: 50px;
+    padding: 50px 20px;
 }
 
 .step-detail h1 {
@@ -501,6 +501,28 @@ h3 {
 
 .faq {
     margin: 50px 0;
+}
+
+.panel-default {
+    border: 0;
+}
+
+.panel-default > .panel-heading {
+    background: none;
+    border: 0;
+}
+
+.question {
+    color: #000;
+    font-size: 1.2rem;
+}
+
+.question:hover {
+    color: #000;
+}
+
+.answer {
+    font-size: 1rem;
 }
 
 
