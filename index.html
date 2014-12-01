@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/selectize.css">
     <link rel="stylesheet" href="css/selectize.bootstrap3.css">
     <link rel="stylesheet" href="css/43layers.css">
@@ -17,18 +18,20 @@
   </head>
   <body>
     <div class="wrapper">
-      <nav role="navigation" class="navbar navbar-default navbar-fixed-top"><a href="index.html" class="navbar-brand navbar-right"><img src="icons/Main_nav_logo_blk_180px.png" height="41px" width="140px"></a>
-        <div class="navbar-header">
-          <button type="button" data-toggle="collapse" data-target="#collapsed-nav" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-        </div>
-        <div id="collapsed-nav" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="design.html">Design</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="login.html">Log in</a></li>
-          </ul>
+      <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" data-toggle="collapse" data-target="#collapsed-nav" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.html" class="navbar-brand navbar-right"><img src="icons/Main_nav_logo_blk_180px.png" height="41px" width="140px"></a>
+          </div>
+          <div id="collapsed-nav" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="design.html">Design</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="login.html">Log in</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
       <div class="content">
@@ -243,7 +246,7 @@
               <div class="col-md-12 step-icon"><img src="../icons/Chat_icon_non_hover.png"></div>
             </div>
             <div class="row">
-              <div class="col-md-6 step-picture"><a href="#modal1" data-target="#modal1" role="modal" data-toggle="modal"><img src="icons/submit_your_idea_imac.png"></a></div>
+              <div class="col-md-6 step-picture"><a href="#modal1" data-target="#modal1" role="modal" data-toggle="modal"><img src="icons/Start_collaborating_Imac.png"></a></div>
               <div class="col-md-6">
                 <div class="row">
                   <div class="col-md-10 col-xs-10">
@@ -260,7 +263,7 @@
           </div>
         </div>
         <!-- end of .step2-->
-        <div id="submit" class="step-detail step3">
+        <div id="view" class="step-detail step3">
           <div class="container">
             <div class="row">
               <div class="col-md-12 step-icon"><img src="../icons/ScreenIcon_icon_75px.png"></div>
@@ -289,7 +292,7 @@
               <div class="col-md-12 step-icon"><img src="../icons/Holdinyourhand_icon_non_hover.png"></div>
             </div>
             <div class="row">
-              <div class="col-md-6 step-picture"><a href="#modal1" data-target="#modal1" role="modal" data-toggle="modal"><img src="icons/submit_your_idea_imac.png"></a></div>
+              <div class="col-md-6 step-picture"><a href="#modal1" data-target="#modal1" role="modal" data-toggle="modal"><img src="icons/holdinyourhandimac.png"></a></div>
               <div class="col-md-6">
                 <div class="row">
                   <div class="col-md-10 col-xs-10">
@@ -301,10 +304,11 @@
                     <h1 class="step-number">4</h1>
                   </div>
                 </div>
-                <!--
-                .col-md-4.col-md-offset-4.btn.btn-lg.btn-primary#getstartedbutton
-                | Get Started
-                -->
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 col-md-offset-4">
+                <button class="btn btn-lg btn-primary btn-block get-started">Get Started</button>
               </div>
             </div>
           </div>
@@ -314,12 +318,8 @@
           <h2>Want To Know More?</h2>
           <div class="container">
             <div class="row">
-              <div class="col-md-3 col-md-offset-3">
-                <div class="btn btn-lg btn-block more-info">FAQ</div>
-              </div>
-              <div class="col-md-3">
-                <div class="btn btn-lg btn-block more-info">Contact Us</div>
-              </div>
+              <div class="col-md-3 col-md-offset-3"><a href="faq.html" class="btn btn-md btn-block">FAQ</a></div>
+              <div class="col-md-3"><a href="contact.html" class="btn btn-md btn-block">Contact Us</a></div>
             </div>
             <div class="row text-center"><a href="https://www.facebook.com/pages/43Layers/273568439486440"><img src="icons/Facebook_icon_50px.png"></a><a href="https://twitter.com/43Layers"><img src="icons/Twitter_icon_50px.png"></a><a href="http://instagram.com/43layers"><img src="icons/Instagram_icon_50px.png"></a><a href="http://www.pinterest.com/43layers"><img src="icons/Pintrest_icon_50px.png"></a></div>
           </div>
@@ -337,10 +337,10 @@
               </ul>
             </div>
             <div class="col-md-6">
-              <form class="form-inline form-newsletter">
-                <input type="text" placeholder="Sign up for emails" class="form-control">
-                <button class="btn btn-primary btn-newsletter">Submit</button>
-              </form>
+              <div class="input-group form-newsletter">
+                <input type="text" placeholder="Sign up for emails" class="form-control"><span class="input-group-btn">
+                  <button class="btn btn-primary btn-newsletter">Submit</button></span>
+              </div>
             </div>
           </div>
         </div>

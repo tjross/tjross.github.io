@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/selectize.css">
     <link rel="stylesheet" href="css/selectize.bootstrap3.css">
     <link rel="stylesheet" href="css/43layers.css">
@@ -17,99 +18,81 @@
   </head>
   <body>
     <div class="wrapper">
-      <nav role="navigation" class="navbar navbar-default navbar-fixed-top"><a href="index.html" class="navbar-brand navbar-right"><img src="icons/Main_nav_logo_blk_180px.png" height="41px" width="140px"></a>
-        <div class="navbar-header">
-          <button type="button" data-toggle="collapse" data-target="#collapsed-nav" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-        </div>
-        <div id="collapsed-nav" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="design.html">Design</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="login.html">Log in</a></li>
-          </ul>
+      <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" data-toggle="collapse" data-target="#collapsed-nav" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="index.html" class="navbar-brand navbar-right"><img src="icons/Main_nav_logo_blk_180px.png" height="41px" width="140px"></a>
+          </div>
+          <div id="collapsed-nav" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="design.html">Design</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="login.html">Log in</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
-      <div class="container">
-        <h1 class="step">Step 1: Submit Your Idea</h1>
-        <div class="row text-center process">
-          <div class="col-md-3">
-            <h3>1. Submit Your Idea<a href="#submit" class="submit center-block">&nbsp;</a></h3>
-          </div>
-          <div class="col-md-3">
-            <h3>2. Meet Your Designer<a href="#meet" class="meet center-block">&nbsp;</a></h3>
-          </div>
-          <div class="col-md-3">
-            <h3>3. View Digital Preview<a href="#view" class="view center-block">&nbsp;</a></h3>
-          </div>
-          <div class="col-md-3">
-            <h3>4. Hold In Your Hands<a href="#hold" class="hold center-block">&nbsp;</a></h3>
-          </div>
-        </div><br><br>
-        <div class="row">
-          <div class="col-md-4">
-            <h3>Backgroud Information</h3>
-          </div>
-          <div class="col-md-8">
-            <p>Fill out the form below to describe you product idea. This brief will be reviewed and used by your designer to bring your ideas to life.</p>
-          </div>
-          <div class="row">
-            <div class="col-md-8 col-md-offset-4"><br><br>
-              <label>Give your project a one sentence title*</label>
-              <input type="text" name="title" placeholder="e.g. Bridesmaid Necklaces or Baby Shower Table Centerpieces." class="form-control">
+      <div class="content">
+        <div class="submit-your-idea">
+          <h1 class="text-center">Step 1: Submit Your Idea</h1>
+          <div class="container">
+            <div class="row text-center process">
+              <div class="col-md-3">
+                <h3>1. Submit Your Idea<a class="submit center-block"></a></h3>
+              </div>
+              <div class="col-md-3">
+                <h3>2. Meet Your Designer<a class="meet center-block"></a></h3>
+              </div>
+              <div class="col-md-3">
+                <h3>3. View Digital Preview<a class="view center-block"></a></h3>
+              </div>
+              <div class="col-md-3">
+                <h3>4. Hold In Your Hands<a class="hold center-block"></a></h3>
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-md-8 col-md-offset-4"><br><br>
-              <label>Product Description*</label>
-              <textarea type="text" name="description" placeholder="This brief will be used by your designer to bring your idea to life, so the more specific the better." class="form-control"></textarea>
+            <div class="row">
+              <div class="col-md-4">
+                <h2>Backgroud Information</h2>
+              </div>
+              <div class="col-md-8">
+                <p>Fill out the form below to describe you product idea. This brief will be reviewed and used by your designer to bring your ideas to life.</p>
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-md-8 col-md-offset-4"><br><br>
-              <label>Due Date</label>
-              <input type="text" name="due_date" placeholder="When do you need to receive this order by?" class="form-control">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-8 col-md-offset-4"><br><br>
-              <label>Budget</label><br>
-              <input type="text" name="budget_from" placeholder="$100" class="budget"><span>to </span>
-              <input type="text" name="budget_to" placeholder="$100" class="budget">
-            </div>
-          </div><br><br>
-          <div class="row">
-            <div class="col-md-4">
-              <h3>Inspiration board</h3>
-            </div>
-            <div class="col-md-8">
-              <p>Post photos or sketches to the inspiration board below and annotate them to further describe your product to your designer.</p>
-            </div>
-          </div><br><br>
-          <div class="row">
-            <div class="col-md-3">
-              <div class="inspiration"></div>
-            </div>
-            <div class="col-md-3">
-              <div class="inspiration"></div>
-            </div>
-            <div class="col-md-3">
-              <div class="inspiration"></div>
-            </div>
-            <div class="col-md-3">
-              <div class="inspiration"></div>
-            </div>
-          </div><br><br>
-          <div class="row">
-            <div class="col-md-4">
-              <h3>Submit or save</h3>
-            </div>
-            <div class="col-md-8">
-              <p>Are you ready to start your design project?</p>
-              <p>Click submit if you are ready to begin. Click Save if you want to keep brainstorming and come back to your project at a later date.</p>
-              <button class="btn btn-primary">Submit</button>
-              <button class="btn btn-secondary">Save</button>
+            <div class="form">
+              <div class="row">
+                <div class="col-md-8 col-md-offset-4">
+                  <div class="form-group">
+                    <label for="title">Give your project a one sentence title *</label>
+                    <input id="title" type="text" name="title" placeholder="e.g. Bridesmaid Necklaces or Baby Shower Table Centerpieces." class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="description">Product Description *</label>
+                    <textarea id="description" type="text" name="description" placeholder="This brief will be used by your designer to bring your idea to life, so the more specific the better." class="form-control"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="due-date">Due Date</label>
+                    <input id="due-date" type="text" name="due_date" placeholder="When do you need to receive this order by?" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="budget">Budget</label>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <input type="text" name="budget_from" placeholder="Min. $10" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <input type="text" name="budget_to" placeholder="Max. $100" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn btn-lg btn-primary center-block">Submit</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -126,10 +109,10 @@
               </ul>
             </div>
             <div class="col-md-6">
-              <form class="form-inline form-newsletter">
-                <input type="text" placeholder="Sign up for emails" class="form-control">
-                <button class="btn btn-primary btn-newsletter">Submit</button>
-              </form>
+              <div class="input-group form-newsletter">
+                <input type="text" placeholder="Sign up for emails" class="form-control"><span class="input-group-btn">
+                  <button class="btn btn-primary btn-newsletter">Submit</button></span>
+              </div>
             </div>
           </div>
         </div>
