@@ -1,4 +1,5 @@
 /* FONT STACK */
+
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700|Lora:400,700|Bentham);
 
 
@@ -43,7 +44,7 @@ p {
 
 h2 {
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 
 h3 {
@@ -172,7 +173,7 @@ h3 {
 }
 
 .hero .selectize-input input, .selectize-dropdown {
-    font-size: 1.2em;
+    font-size: 1rem;
 }
 
 
@@ -370,50 +371,6 @@ h3 {
 }
 
 
-/* CONTACT */
-
-.contact {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background: url('../images/Footer_background_image_desktop.jpg') no-repeat center center;
-    background-size: cover;
-}
-
-.contact h2 {
-    color: #fff;
-}
-
-.contact .btn {
-    font-size: 1.5em;
-    font-weight: 300;
-    background-color: transparent;
-    margin-right: 20px;
-    border-color: #fff;
-    color: #fff;
-    border-width: thin;
-    border-radius: 0;
-    margin-top: 5px;
-}
-
-.contact img {
-    padding-left:10px;
-    padding-right:10px;
-    padding-top:20px;
-}
-
-.contact img:hover,
-.contact img:active {
-    filter: brightness(40%);
-    -webkit-filter: brightness(40%);
-    -moz-filter: brightness(40%);
-    -o-filter: brightness(40%);
-    -ms-filter: brightness(40%);
-}
-
-
-/* STEP 4: HOLD IT IN YOUR HANDS */
-
-
 /* FOOTER */
 
 .footer {
@@ -422,7 +379,7 @@ h3 {
     position: absolute;
     bottom: 0;
     left: 0;
-    padding: 50px 10px;
+    padding: 20px 10px;
     background-color :#686b6a;
 }
 
@@ -507,8 +464,16 @@ h3 {
     border: 0;
 }
 
+.panel-heading {
+    border: none;
+}
 .panel-default > .panel-heading {
     background: none;
+    border: 0;
+}
+
+/* Overrrides Bootstrap's border for panels */
+.panel-group .panel-heading + .panel-collapse > .panel-body {
     border: 0;
 }
 
@@ -517,12 +482,88 @@ h3 {
     font-size: 1.2rem;
 }
 
-.question:hover {
+.question:hover,
+.question:visited,
+.question:active,
+.question:focus {
     color: #000;
 }
 
 .answer {
     font-size: 1rem;
+}
+
+
+/* CONTACT PAGE */
+
+.contact-page {
+    height: 100%;
+    padding: 50px 0 50px;
+    background: url('../images/Footer_background_image_desktop.jpg') no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+}
+
+.contact-page  button {
+    display: block;
+    margin: 0 auto;
+}
+
+.contact-page p {
+    font-size: 1rem;
+}
+
+.contact-page li {
+    font-size: 1rem;
+}
+
+.form-contact {
+    margin: 20px 0;
+}
+
+
+/* CONTACT */
+
+.contact {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: url('../images/Footer_background_image_desktop.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.contact h2 {
+    color: #fff;
+}
+
+.contact .btn {
+    font-size: 1.5em;
+    font-weight: 300;
+    background-color: transparent;
+    margin-right: 20px;
+    border-color: #fff;
+    color: #fff;
+    border-width: thin;
+    border-radius: 0;
+    margin-top: 5px;
+}
+
+.contact img {
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:20px;
+}
+
+.contact img:hover,
+.contact img:active {
+    filter: brightness(40%);
+    -webkit-filter: brightness(40%);
+    -moz-filter: brightness(40%);
+    -o-filter: brightness(40%);
+    -ms-filter: brightness(40%);
 }
 
 
@@ -554,7 +595,7 @@ h3 {
     }
 
     .content {
-	padding-bottom: 270px;
+	padding-bottom: 160px;
     }
 
     .hero h1 {
@@ -681,160 +722,33 @@ h3 {
     }
 
     .content {
-	padding-bottom: 210px;
+	padding-bottom: 140px;
     }
 
     .hero h1 {
-
+	margin-top: 90px;
+	font-size: 3.5rem;
     }
 
     .hero h2 {
-
+	margin-top: 10px;
+	font-size: 2.5rem;
     }
 
-    .hero h3 {
+    .hero h3 {	
+	margin: 60px 0;
+	font-size: 1rem;
+    }
 
+    .hero button {
+	height: 42px;
     }
 
     .form-newsletter {
-	padding-top: 10px;
+	margin-top: 10px;
     }
 
-}
-
-
-/* Here starts the old code */
-
-/* More info section */
-
-/*
-@media(max-width:767px) {
-    body {
-	font-size: 1.5em;
-    }
-    .footer {
-	font-size: 0.7em;
-    }
-    
-    .newsletter {
-	display: none;
-    }
-
-    .step4 .btn {
-        margin-left:40%;
-    }
-    
-    .contact {
-	background: #000 url('../images/Footer_background_image_desktop.jpg') no-repeat 0px 0px;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	background-size: cover;
-    }
-    
-    .col-md-2.btn.btn-lg.btn-default {
-	padding-left:30px;
-	padding-right:30px;
-	margin-left:30px;
-    }
-            
-    .row #getstartedbutton {
-	margin-left:463px;
-	width:20%;
-    }
-    
-    .col-md-4 h3#keys{
-	padding-top: 13.5px;
-    }
-    
-    .row #getstartedbutton {
-        margin-left:0;
-        margin-bottom:30px;
-        padding-bottom:10px;
-        width: 100%;
-        margin-right:0;
-    }
-           
-    #submit h1 {
-        font-style: italic;
-        color: white;
-    }
-    
-    #submit h3 {
-        font-style: italic;
-        color: white;
-    }
-    
-    #submit p {
-        font-family: 'Lato', 'sans-serif';
-        font-weight: lighter;
-        color: white;
-    }
-    
-    .form-inline > a.btn.btn-primary.btn-lg.col-md-4 {
-        margin-left:12px;
-        width:342px;
-    }
-    
-    img {
-        padding:9px 10px;
-    }
-    
-    h2.text-right {
-        font-size:2.5em;
-    }
-    
-    h3.text-right {
-        font-size: 2.0em;
-    }
-    
-    .testimonial h2 {
-        font-size: 1.8em;
-    }
-    
-    .col-md-6.text-center img {
-        display: none;
-    }
-        
-    #howitworks {
-        font-size:0.8em;
-    }
-    
-    .howitworks {
-        margin-top:50px;
-        margin-bottom:50px;
-    }
-    
-    #one, #three {
-        margin-right:40px;
-    }
-    
-    .row.text-center > .col-md-3 h3 {
-        font-size:1.1em;
-    }
-    
-    .col-md-1.text-left {
-        padding: 40px 40px 40px 40px;
-        display: block;
-        margin: 40px 40px;
-    }
-    
-    .col-md-5 p {
-        font-size: 1.1em;
-    }
-
-    .contact {
-        padding-top:40px;
-        margin-top:40px;
-        background:#000 url('../images/Footer_background_image_desktop.jpg') no-repeat 0px 0px;
-    }
-    
-    #mobile {
-        font-weight: 300;
-        color:#fff;
-    }
-    
-    #lifooter li a {
-        margin-left:5px;
+    .copy {
+	font-size: 0.8rem;
     }
 }
-
