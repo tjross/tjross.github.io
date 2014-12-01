@@ -1,0 +1,31 @@
+extends ./partials/_base.jade
+
+block title
+  title 43 Layers - Inspiration Board
+
+block content
+  include  ./partials/_header.jade
+  .content
+    .inspiration-board
+      h1.text-center Inspiration Board
+      .container
+        p.text-center
+          | Post photos or sketches to the inspiration board below and annotate them to further describe your product to your designer.
+        .row
+          .col-md-3
+            .inspiration
+          .col-md-3
+            .inspiration
+          .col-md-3
+            .inspiration
+          .col-md-3
+            .inspiration
+  
+        .row
+          .col-md-4
+            h2 Submit or Save
+          .col-md-8
+            p Are you ready to start your design project?
+            p Click submit if you are ready to begin. Click Save if you want to keep brainstorming and come back to your project at a later date.
+            button.btn.btn-lg.btn-primary.center-block Save
+  include ./partials/_footer.jade
