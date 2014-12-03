@@ -61,7 +61,7 @@ h3 {
 .form-control:focus {
     outline: 0;
     padding: 17px;
-    border: 3px solid #665F56;
+    border: 1px solid #ccc;
     border-radius: 0;
     box-shadow: none;
 }
@@ -371,6 +371,7 @@ h3 {
 }
 
 .get-started {
+    height: 42px;
     margin-top: 40px;
 }
 
@@ -417,6 +418,7 @@ h3 {
 
 .copy {
     text-align: center;
+    font-weight: 200;
     color: #fff;
     margin-top: 20px;
 }
@@ -464,6 +466,10 @@ h3 {
     margin: 50px 0;
 }
 
+.panel {
+    box-shadow: none;
+}
+
 .panel-default {
     border: 0;
 }
@@ -481,16 +487,14 @@ h3 {
     border: 0;
 }
 
-.question {
-    color: #000;
-    font-size: 1.2rem;
-}
-
+.question,
 .question:hover,
 .question:visited,
 .question:active,
 .question:focus {
-    color: #000;
+    color: #20cb92;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 .answer {
@@ -680,6 +684,24 @@ h3 {
 
     .copy {
 	font-size: 0.6rem;
+    }
+
+    /* Makes text in placeholder smaller */
+    ::-webkit-input-placeholder {
+	font-size: 0.8rem;
+    }
+    :-moz-placeholder {
+	font-size: 0.8rem;
+    }
+    ::-moz-placeholder {
+	font-size: 0.8rem;
+    }
+    :-ms-input-placeholder {  
+	font-size: 0.8rem;
+    }
+    /* Aligns vertically the text in the textarea of the Submit Your Idea form */
+    .submit-your-idea textarea {
+	height: 5.5rem;
     }
 }
 
