@@ -22,7 +22,7 @@ body {
 }
 
 
-/* FONTS */
+/* FONTS & TEXT */
 
 html {
     color: #4e4d4d;
@@ -30,26 +30,23 @@ html {
     font-family: 'Lato', sans-serif;
 }
 
-h1,
-h2 {
+h1 {
     font-family: 'Bentham', sans-serif;
 }
-
-p {
-    font-size: 1rem;
-    font-family: 'Lato', sans-serif;
-}
-
-
-/* HEADINGS */
 
 h2 {
     text-align: center;
     font-size: 1.8rem;
+    font-family: 'Bentham', sans-serif;
 }
 
 h3 {
     text-align: center;
+    font-size: 1.1rem;
+    font-family: 'Lato', sans-serif;
+}
+
+p {
     font-size: 1rem;
     font-family: 'Lato', sans-serif;
 }
@@ -153,7 +150,7 @@ h3 {
     text-transform: uppercase;
     color: #fff;
     background-color: #20cb92;
-    padding: 5px;
+    padding: 2px;
 }
 
 .hero #second-typed {
@@ -171,10 +168,6 @@ h3 {
     height: 0.05402160864%;
     border-radius: 0px;
     padding: 10px 16px;
-}
-
-.hero .selectize-input input, .selectize-dropdown {
-    font-size: 1rem;
 }
 
 
@@ -195,8 +188,6 @@ h3 {
     width: 80%;
     margin: 0 auto;
     text-align: center;
-    font-size: 0.8rem;
-    font-family: 'Lato', sans-serif;
 }
 
 
@@ -219,6 +210,7 @@ h3 {
     text-align: center;
     font-family: 'Lato', sans-serif;
 }
+
 
 /* PROCESS */
 
@@ -316,7 +308,7 @@ h3 {
     margin: 10px auto;
 }
 
-.step-picture a img {
+.step-picture img {
     display: block;
     width: 100%;
     margin: 20px auto;
@@ -419,95 +411,24 @@ h3 {
 
 .copy {
     text-align: center;
-    font-weight: 200;
+    font-weight: light;
     color: #fff;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 
-/* ABOUT */
+/* ABOUT, PRIVACY, TERMS, CONTACT, FAQ AND CONTACT */
 
-.about {
+.about, .privacy, .terms, .contact-page, .faq {
     text-align: center;
-    margin: 80px 0;
+    padding: 50px 0;
 }
 
-.about h2 {
-    margin-top: 50px;
+.about h1, .privacy h1, .terms h1, .contact-page h1, .faq h1 {
+
 }
-
-
-/* PRIVACY */
-
-.privacy {
-    text-align: center;
-    margin: 80px 0;
-}
-
-.privacy h2 {
-    margin-top: 50px;
-}
-
-
-/* TERMS AND CONDITIONS */
-
-.terms {
-    text-align: center;
-    margin: 80px 0;
-}
-
-.terms h2 {
-    margin-top: 50px;
-}
-
-
-/* FAQ */
-
-.faq {
-    margin: 50px 0;
-}
-
-.panel {
-    box-shadow: none;
-}
-
-.panel-default {
-    border: 0;
-}
-
-.panel-heading {
-    border: none;
-}
-.panel-default > .panel-heading {
-    background: none;
-    border: 0;
-}
-
-/* Overrrides Bootstrap's border for panels */
-.panel-group .panel-heading + .panel-collapse > .panel-body {
-    border: 0;
-}
-
-.question,
-.question:hover,
-.question:visited,
-.question:active,
-.question:focus {
-    color: #20cb92;
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
-.answer {
-    font-size: 1rem;
-}
-
-
-/* CONTACT PAGE */
 
 .contact-page {
-    height: 100%;
-    padding: 80px 0 50px;
     background: url('../images/Footer_background_image_desktop.jpg') no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -517,19 +438,44 @@ h3 {
     color: #fff;
 }
 
-.contact-page  button {
+.contact-page button {
     display: block;
     margin: 0 auto;
-}
-
-.contact-page li {
-    font-size: 1rem;
 }
 
 .form-contact {
     margin: 20px 0;
 }
 
+.faq .panel {
+    box-shadow: none;
+}
+
+.faq .panel-default {
+    border: 0;
+}
+
+.faq .panel-heading {
+    border: none;
+}
+
+.faq .panel-default > .panel-heading {
+    background: none;
+    border: 0;
+}
+
+/* Overrides Bootstrap's border for panels */
+.panel-group .panel-heading + .panel-collapse > .panel-body {
+    border: 0;
+}
+
+.question, .question:hover, .question:visited, .question:active,
+.question:focus {
+    font-family: 'Bentham', serif;
+    color: #20cb92;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
 
 /* CONTACT */
 
@@ -545,7 +491,7 @@ h3 {
 }
 
 .contact .btn {
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 300;
     background-color: transparent;
     margin-right: 20px;
@@ -630,7 +576,7 @@ h3 {
 
 @media(max-width:767px) {
     body {
-	font-size: 0.5rem;
+	font-size: 1rem;
     }
 
     .content {
@@ -649,7 +595,7 @@ h3 {
 
     .hero h3 {	
 	margin: 60px 0;
-	font-size: 0.5rem;
+	font-size: 0.6rem;
     }
 
     .hero select {
@@ -679,10 +625,6 @@ h3 {
 	padding-top: 10px;
     }
 
-    .footer-links li a {
-	font-size: 0.8rem;
-    }
-
     .copy {
 	font-size: 0.6rem;
     }
@@ -706,29 +648,17 @@ h3 {
     }
 }
 
-@media(min-width:768px) {
-    body {
-	font-size: 1.2rem;
-    }
+@media(min-width:768px) {}
 
-    .navbar-fixed-top .navbar-brand {
-        padding: 15px 0;
-    }
-}
-
-@media(min-width:992px) {
-    body {
-	font-size: 1.2rem;
-    }
-}
+@media(min-width:992px) {}
 
 @media(min-width:1200px) {
     body {
-	font-size: 1.5rem;
+	font-size: 1rem;
     }
 
     .content {
-	padding-bottom: 140px;
+	padding-bottom: 125px;
     }
 
     .hero h1 {
@@ -771,6 +701,10 @@ h3 {
 
     .form-newsletter {
 	margin-top: 10px;
+    }
+
+    .about, .privacy, .terms, .contact-page, .faq {
+	padding: 80px 0;
     }
 
     .copy {
