@@ -424,6 +424,11 @@ p {
     padding: 50px 0;
 }
 
+.about h2, .privacy h2, .terms h2, .contact-page h2, .faq h2,
+.about h3, .privacy h3, .terms h3, .contact-page h3, .faq h3 {
+    margin: 40px 0 0;
+}
+
 .about h1, .privacy h1, .terms h1, .contact-page h1, .faq h1 {
 
 }
@@ -477,6 +482,7 @@ p {
     font-size: 1.2rem;
 }
 
+
 /* CONTACT */
 
 .contact {
@@ -518,11 +524,11 @@ p {
 }
 
 
-/* LOG IN & SIGN UP */
+/* LOGIN AND SIGNUP */
 
 .login {
+    margin: 50px;
     text-align: center;
-    margin: 50px 0;
 }
 
 .login p {
@@ -709,5 +715,9 @@ p {
 
     .copy {
 	font-size: 0.8rem;
+    }
+
+    .login {
+	padding-top: 8%;
     }
 }
