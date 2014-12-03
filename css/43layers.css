@@ -394,6 +394,7 @@ h3 {
 
 .btn-newsletter {
     padding: 9px 12px;
+    margin-left: 5px !important;
 }
 
 .footer-links {
