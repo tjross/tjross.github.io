@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>43 Layers - Submit Your Idea</title>
+    <title>43Layers - Submit Your Idea</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,6 +9,7 @@
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/selectize.css">
     <link rel="stylesheet" href="css/selectize.bootstrap3.css">
+    <link rel="stylesheet" href="css/rome.min.css">
     <link rel="stylesheet" href="css/43layers.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries-->
     <!-- WARNING: Respond.js doesn't work if you view the page via file://-->
@@ -29,7 +30,7 @@
               <li><a href="about.html">About</a></li>
               <li><a href="faq.html">FAQ</a></li>
               <li><a href="blog.html">Blog</a></li>
-              <li><a href="login.html">Log in</a></li>
+              <li><a href="login.html" class="btn btn-default">Log in</a></li>
             </ul>
           </div>
         </div>
@@ -54,10 +55,10 @@
             </div>
             <div class="row">
               <div class="col-md-4">
-                <h2>Backgroud Information</h2>
+                <h2>Background Information</h2>
               </div>
               <div class="col-md-8">
-                <p>Fill out the form below to describe you product idea. This brief will be reviewed and used by your designer to bring your ideas to life.</p>
+                <p>Fill out the forms below to describe you product idea. This brief will be reviewed and used by your designer to bring your ideas to life.</p>
               </div>
             </div>
             <div class="form">
@@ -73,24 +74,24 @@
                   </div>
                   <div class="form-group">
                     <label for="due-date">Due Date</label>
-                    <input id="due-date" type="text" name="due_date" placeholder="When do you need to receive this order by?" class="form-control">
+                    <input id="duedate" type="text" name="due_date" placeholder="When do you need to receive this order by?" class="form-control">
                   </div>
                   <div class="form-group">
                     <label for="budget">Budget</label>
                     <div class="row">
                       <div class="col-md-6">
                         <div class="form-group">
-                          <input type="text" name="budget_from" placeholder="Min. $10" class="form-control">
+                          <input type="text" name="budget_from" placeholder="Min. e.g. $100" class="form-control">
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group">
-                          <input type="text" name="budget_to" placeholder="Max. $100" class="form-control">
+                          <input type="text" name="budget_to" placeholder="Max. e.g. $500" class="form-control">
                         </div>
                       </div>
                     </div>
                   </div>
-                  <button class="btn btn-lg btn-primary center-block">Submit</button>
+                  <button class="btn btn-lg btn-primary center-block">Next</button>
                 </div>
               </div>
             </div>
@@ -100,7 +101,7 @@
       <div class="footer">
         <div class="container">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-4">
               <ul class="footer-links">
                 <li><a href="privacy.html">Privacy</a></li>
                 <li><a href="terms.html">Terms</a></li>
@@ -108,21 +109,23 @@
                 <li><a href="contact.html">Contact</a></li>
               </ul>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
               <div class="input-group form-newsletter">
-                <input type="text" placeholder="Sign up for emails" class="form-control"><span class="input-group-btn">
+                <input type="text" placeholder="Sign up for emails" class="form-control input-newsletter"><span class="input-group-btn">
                   <button class="btn btn-primary btn-newsletter">Submit</button></span>
               </div>
             </div>
           </div>
         </div>
-        <p class="copy">&copy; 2014 43 Layers Photography provided by Sarah Kathleen</p>
+        <p class="copy">&copy; 2014 43Layers Photography provided by Sarah Kathleen</p>
       </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="js/selectize.js"></script>
     <script src="js/typed.js"></script>
+    <script src="js/rome.min.js"></script>
     <script src="js/43layers.js"></script>
   </body>
 </html>
