@@ -70,7 +70,7 @@ p {
     background-color: #20cb92;
     border-radius: 0;
     text-transform: uppercase;
-    border-color: #20cb92
+    border-color: #20cb92;
 }
 
 .btn-primary:hover,
@@ -94,11 +94,25 @@ p {
     border-color: #999;
 }
 
+.btn-default,
 .btn-default:hover,
 .btn-default:active {
-    border-color: #20cb92;
-    color: #20cb92;
+    border: 2px solid #ccc;
+    color: #ccc;
     border-radius: 0;
+}
+
+.btn-contact {
+    color: #fff;
+    border-color: #fff;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    border-radius: 0;
+}
+
+.btn-contact:hover {
+    color: #fff;
+    background-color: #20cb92;
 }
 
 
@@ -415,6 +429,10 @@ p {
 
 /* ABOUT, PRIVACY, TERMS, CONTACT, FAQ AND CONTACT */
 
+.about {
+    margin-top: 20px;
+}
+
 .about, .privacy, .terms, .contact-page, .faq {
     text-align: center;
     padding: 50px 0;
@@ -492,18 +510,6 @@ p {
     color: #fff;
 }
 
-.contact .btn {
-    font-size: 1.2em;
-    font-weight: 300;
-    background-color: transparent;
-    margin-right: 20px;
-    border-color: #fff;
-    color: #fff;
-    border-width: thin;
-    border-radius: 0;
-    margin-top: 5px;
-}
-
 .contact img {
     padding-left:10px;
     padding-right:10px;
@@ -579,6 +585,10 @@ p {
 @media(max-width:767px) {
     body {
 	font-size: 1rem;
+    }
+
+    .navbar-fixed-top .navbar-brand {
+	padding: 0 15px;
     }
 
     .content {
