@@ -1,5 +1,4 @@
 /* FONT STACK */
-
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700|Lora:400,700|Bentham);
 
 
@@ -433,10 +432,15 @@ p {
 /* ABOUT, PRIVACY, TERMS, CONTACT, FAQ AND CONTACT */
 
 .about {
-    margin-top: 20px;
+    margin: 40px 0;
+    text-align: center;
 }
 
-.about, .privacy, .terms, .contact-page {
+.about-section {
+    padding: 40px 0;
+}
+
+.privacy, .terms, .contact-page {
     text-align: center;
     padding: 50px 0;
 }
@@ -799,7 +803,11 @@ p {
 	margin-top: 10px;
     }
 
-    .about, .privacy, .terms, .contact-page, .faq {
+    .about-section {
+	padding: 40px 160px;
+    }
+
+    .privacy, .terms, .contact-page, .faq {
 	padding: 80px 0;
     }
 
