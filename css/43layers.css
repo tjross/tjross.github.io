@@ -56,8 +56,7 @@ p {
 
 /* FORM CONTROLS */
 
-.form-control,
-.form-control:focus {
+.form-control, .form-control:focus {
     outline: 0;
     padding: 17px;
     border: 1px solid #ccc;
@@ -72,9 +71,11 @@ p {
 
 /* BUTTONS */
 
-.btn {
+.btn, .btn:hover, .btn:active, .btn:focus {
     border-radius: 0;
     text-transform: uppercase;
+    outline: none;
+    box-shadow: none;
 }
 
 .btn-primary {
@@ -82,8 +83,7 @@ p {
     border-color: #20cb92;
 }
 
-.btn-primary:hover,
-.btn-primary:active {
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
     background-color: #999;
     border-color: #999;
 }
@@ -93,15 +93,12 @@ p {
     border-color: #686b6a;
 }
 
-.btn-secondary:hover,
-.btn-secondary:active {
+.btn-secondary:hover, .btn-secondary:active, .btn-primary:focus {
     background-color: #999;
     border-color: #999;
 }
 
-.btn-default,
-.btn-default:hover,
-.btn-default:active {
+.btn-default, .btn-default:hover, .btn-default:active, .btn-primary:focus {
     border: 2px solid #ccc;
     color: #ccc;
 }
@@ -112,7 +109,7 @@ p {
     font-size: 0.8rem;
 }
 
-.btn-contact:hover {
+.btn-contact:hover, .btn-primary:focus {
     color: #fff;
     background-color: #20cb92;
 }
@@ -149,9 +146,10 @@ p {
 
 .hero {
     width: 100%;
-    height: 500px;
+    height: 800px;
     margin-top: -20px;
-    background: url('../images/Hero_highres_full_width.jpg') no-repeat center center;
+    padding-top: 90px;
+    background: url('../images/Hero_highres_full_width.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -185,15 +183,19 @@ p {
 
 /* RECENT CUSTOMER CREATIONS */
 
-.creations,
-.creation {
+.creations, .creation {
     margin: 50px 0;
 }
 
-.creation img {
+.creation-picture {
     display: block;
     width: 85%;
     margin: 0 auto;
+}
+
+.creation-picture img {
+    width: 100%;
+    max-height: 275px;
 }
 
 .creation p {
@@ -335,18 +337,14 @@ p {
     background-size: cover;
 }
 
-.step1,
-.step1 h2,
-.step1 h3 {
+.step1, .step1 h2, .step1 h3 {
     text-align: left;
 }
 
 
 /* STEP 2: MEET YOUR DESGINER */
 
-.step2,
-.step2 h2,
-.step2 h3 {
+.step2, .step2 h2, .step2 h3 {
     text-align: right;
 }
 
@@ -359,24 +357,22 @@ p {
     background-size: cover;
 }
 
-.step3,
-.step3 h2,
-.step3 h3 {
+.step3, .step3 h2, .step3 h3 {
     text-align: left;
 }
 
 
 /* STEP 4: HOLD IN YOUR HANDS */
 
-.step4,
-.step4 h2,
-.step4 h3 {
+.step4, .step4 h2, .step4 h3 {
     text-align: right;
 }
 
 .get-started {
+    display: block;
+    width: 236px;
     height: 42px;
-    margin-top: 40px;
+    margin: 40px auto;
 }
 
 
@@ -423,7 +419,7 @@ p {
 
 .copy {
     text-align: center;
-    font-weight: light;
+    font-weight: 100;
     color: #fff;
     margin-top: 10px;
 }
@@ -537,8 +533,7 @@ p {
     padding-top:20px;
 }
 
-.contact img:hover,
-.contact img:active {
+.contact img:hover, .contact img:active {
     filter: brightness(40%);
     -webkit-filter: brightness(40%);
     -moz-filter: brightness(40%);
@@ -664,7 +659,6 @@ p {
     }
 
     .hero h1 {
-	margin-top: 80px;
 	font-size: 1.4rem;
     }
 
@@ -761,8 +755,11 @@ p {
 	padding-bottom: 125px;
     }
 
+    .hero {
+	padding-top: 150px;
+    }
+
     .hero h1 {
-	margin-top: 90px;
 	font-size: 3.5rem;
     }
 
