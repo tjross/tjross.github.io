@@ -14,13 +14,16 @@ block content
             .col-md-3.col-xs-4
               img.profile-picture(src='images/Deer_stir_products_page.jpg')
             .col-md-9.col-xs-8
-              h3.name Tester McTesty
+              .row
+                .col-md-10.col-xs-10
+                  h3.name Tester McTesty
+                .col-md-2.col-xs-2
+                  button(type="submit").btn.btn-default Edit
               p.description
                 | Room for 100 word description here...
         .row
           .col-md-3
             .menu
-              h3 My Account
               ul.menu-links
                 li
                   a(href="#profile") My Profile
@@ -36,7 +39,7 @@ block content
                   a(href="#settings") Settings
           .col-md-9
             .notifications#notifications
-              h3 Notifications
+              h2 Notifications
               ul
                 li Your designer has submitted a rendering.
                 li You have submitted your deposit and started your project.
@@ -44,7 +47,7 @@ block content
                 li You submitted project: "Keys to Love". We are in the process of finding  you an expert designer to bring your project to life.
                 li Welcome to 43Layers! Thanks for signing up!
             .current-projects#current-projects
-              h3 Current Projects
+              h2 Current Projects
               .table-responsive
                 table.table
                   tr
@@ -69,7 +72,7 @@ block content
                     td Design
                     td View
             .favorites#favorites
-              h3 Favorites
+              h2 Favorites
               .row
                 .col-md-4
                   img(src='http://placehold.it/100x100')
@@ -85,7 +88,7 @@ block content
                 .col-md-4
                   img(src='http://placehold.it/100x100')
             .order-history#order-history
-              h3 Order History
+              h2 Order History
               .table-responsive
                 table.table
                   tr
@@ -112,25 +115,36 @@ block content
                     // TODO: Add actual star rating
                     td 5 Starts
             .settings#settings
-              h3 Settings
-              .row
-                .col-md-6
-                  form
-                    .form-group
-                      label(for="email") Email Address
-                      input(type="email" placeholder="Email Address").form-control#email
-                    .form-group
-                      label Notifications Emails
-                      br
-                      label.radio-inline
-                        input(type="radio" value="yes")
-                      label.radio-inline
-                        input(type="radio" value="no")
-                    .form-group
-                      label Newsletter
-                      label.radio-inline
-                        input(type="radio" value="yes")
-                      label.radio-inline
-                        input(type="radio" value="no")
+              h2 Settings
+              form.form-horizontal
+                .form-group
+                  label(for="email").col-sm-3.control-label Email
+                  div.col-sm-6
+                    input(type="email" placeholder="Email").form-control#email
+                .form-group
+                  label(for="email").col-sm-3.control-label Notification Emails
+                  div.col-sm-6
+                    label.radio-inline
+                      input(type="radio" name="notifications" value="yes")
+                      | Yes
+                    label.radio-inline
+                      input(type="radio" name="notifications" value="no")
+                      | No
+                .form-group
+                  label(for="email").col-sm-3.control-label Newsletter
+                  div.col-sm-6
+                    label.radio-inline
+                      input(type="radio" name="newsletter" value="yes")
+                      | Yes
+                    label.radio-inline
+                      input(type="radio" name="newsletter" value="no")
+                      | No
+                .form-group
+                  .col-sm-3.col-sm-offset-3
+                    button(type="submit").btn.btn-secondary Cancel
+                    button(type="submit").btn.btn-primary Save
+                  .col-sm-3.col-sm-offset-2
+                    button(type="submit").btn.btn-default Deactivate Account
+                    
 
   include ./partials/_footer.jade

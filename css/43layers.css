@@ -66,6 +66,10 @@ p {
     box-shadow: none;
 }
 
+.form-group {
+    padding: 15px 0;
+}
+
 
 /* BUTTONS */
 
@@ -103,6 +107,7 @@ p {
     border: 2px solid #ccc;
     color: #ccc;
     border-radius: 0;
+    text-transform: uppercase;
 }
 
 .btn-contact {
@@ -436,13 +441,27 @@ p {
     margin-top: 20px;
 }
 
-.about, .privacy, .terms, .contact-page, .faq {
+.about, .privacy, .terms, .contact-page {
     text-align: center;
     padding: 50px 0;
 }
 
+.faq {
+    padding: 50px 0;
+}
+
+.faq h2 {
+    padding: 10px;
+    text-align: left;
+}
+
+.faq h3 {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
 .about h2, .privacy h2, .terms h2, .contact-page h2, .faq h2,
-.about h3, .privacy h3, .terms h3, .contact-page h3, .faq h3 {
+.about h3, .privacy h3, .terms h3, .contact-page h3 {
     margin: 40px 0 0;
 }
 
