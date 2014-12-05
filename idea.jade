@@ -27,13 +27,19 @@ block content
             h2 Background Information
           .col-md-8
             p
-              | Fill out the forms below to describe you product idea. This brief will be reviewed and used by your designer to bring your ideas to life.
+              | Fill out the forms below to describe your product idea. This brief will be reviewed and used by your designer to bring your idea your life.
         .form
           .row
             .col-md-8.col-md-offset-4
               .form-group
+                label(for="title") Your Name *
+                input.form-control#title(type="text" name="title" placeholder="Your Name")
+              .form-group
+                label(for="title") Email *
+                input.form-control#title(type="email" name="title" placeholder="Email")
+              .form-group
                 label(for="title") Give your project a one sentence title *
-                input.form-control#title(type="text" name="title" placeholder="e.g. Bridesmaid Necklaces or Baby Shower Table Centerpieces.")
+                input.form-control#title(type="text" name="title" placeholder="e.g. Madison's Bridesmaid Necklaces")
               .form-group
                 label(for="description") Product Description *
                 textarea.form-control#description(type="text" name="description" placeholder="This brief will be used by your designer to bring your idea to life, so the more specific the better.")
@@ -44,11 +50,10 @@ block content
                 label(for="budget") Budget
                 .row
                   .col-md-6
-                    .form-group
                       input.form-control(type="text" name="budget_from" placeholder="Min. e.g. $100")
+                      br
                   .col-md-6
-                    .form-group
                       input.form-control(type="text" name="budget_to" placeholder="Max. e.g. $500")
-              button.btn.btn-lg.btn-primary.center-block Next
+              button.btn.btn-lg.btn-xlarge.btn-primary Next
           
   include ./partials/_footer.jade

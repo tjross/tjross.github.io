@@ -73,31 +73,30 @@ p {
 
 /* BUTTONS */
 
-.btn-primary {
-    background-color: #20cb92;
+.btn {
     border-radius: 0;
     text-transform: uppercase;
+}
+
+.btn-primary {
+    background-color: #20cb92;
     border-color: #20cb92;
 }
 
 .btn-primary:hover,
 .btn-primary:active {
     background-color: #999;
-    border-radius: 0;
     border-color: #999;
 }
 
 .btn-secondary {
     background-color: #686b6a;
-    border-radius: 0;
-    text-transform: uppercase;
     border-color: #686b6a;
 }
 
 .btn-secondary:hover,
 .btn-secondary:active {
     background-color: #999;
-    border-radius: 0;
     border-color: #999;
 }
 
@@ -106,16 +105,12 @@ p {
 .btn-default:active {
     border: 2px solid #ccc;
     color: #ccc;
-    border-radius: 0;
-    text-transform: uppercase;
 }
 
 .btn-contact {
     color: #fff;
     border-color: #fff;
     font-size: 0.8rem;
-    text-transform: uppercase;
-    border-radius: 0;
 }
 
 .btn-contact:hover {
@@ -514,7 +509,7 @@ p {
 .question:focus {
     font-family: 'Bentham', serif;
     color: #20cb92;
-    font-weight: bold;
+    font-weight: 400;
     font-size: 1.2rem;
 }
 
@@ -570,16 +565,17 @@ p {
     margin: 80px 0;
 }
 
+.submit-your-idea h2 {
+    margin-top: 0;
+}
+
 .submit-your-idea .process {
-    padding-bottom: 30px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .submit-your-idea .submit {
     background: transparent url('../icons/lightbulb_icon_75_green_hover.png');
-}
-
-.submit-your-idea button {
-    margin: 0 auto;
 }
 
 .submit-your-idea label {
@@ -710,21 +706,41 @@ p {
     }
 
     /* Makes text in placeholder smaller */
+
     ::-webkit-input-placeholder {
 	font-size: 0.8rem;
     }
+
     :-moz-placeholder {
 	font-size: 0.8rem;
     }
+
     ::-moz-placeholder {
 	font-size: 0.8rem;
     }
+
     :-ms-input-placeholder {  
 	font-size: 0.8rem;
     }
+
     /* Aligns vertically the text in the textarea of the Submit Your Idea form */
     .submit-your-idea textarea {
 	height: 5.5rem;
+    }
+
+    .submit-your-idea button {
+	display: block;
+	margin: 0 auto;
+    }
+
+    .submit-your-idea h2 {
+	font-size: 1.4rem;
+	text-align: left;
+    }
+
+    .btn-xlarge {
+	padding: 18px 28px;
+	font-size: 22px;
     }
 }
 
