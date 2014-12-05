@@ -6,26 +6,38 @@ block title
 block content
   include  ./partials/_header.jade
   .content
-    .inspiration-board
-      h1.text-center Inspiration Board
+    .submit-your-idea
+      h1.text-center Step 1: Submit Your Idea (Cont.)
       .container
-        p.text-center
-          | Post photos or sketches to the inspiration board below and annotate them to further describe your product to your designer.
+        .row.text-center.process
+          .col-md-3
+            h3 1. Submit Your Idea
+              a.submit.center-block
+          .col-md-3
+            h3 2. Meet Your Designer
+              a.meet.center-block
+          .col-md-3
+            h3 3. View Digital Preview
+              a.view.center-block
+          .col-md-3
+            h3 4. Hold In Your Hands
+              a.hold.center-block
         .row
-          .col-md-3
-            .inspiration
-          .col-md-3
-            .inspiration
-          .col-md-3
-            .inspiration
-          .col-md-3
-            .inspiration
-  
+          .col-md-4
+            h2 Inspiration Board
+          .col-md-8
+            p
+              | Post photos or sketches to the inspiration board below and annotate them to further describe your product to your designer.
+        .row
+          form(action="inspiration.html").dropzone#inspirationBoard
         .row
           .col-md-4
             h2 Submit or Save
           .col-md-8
             p Are you ready to start your design project?
-            p Click submit if you are ready to begin. Click Save if you want to keep brainstorming and come back to your project at a later date.
-            button.btn.btn-lg.btn-primary.center-block Save
+            p Click Submit if you are ready to begin. Click Save if you want to keep brainstorming and come back to your project at a later date.
+            button.btn.btn-lg.btn-xlarge.btn-primary Submit
+            button.btn.btn-lg.btn-xlarge.btn-secondary Save
+            
   include ./partials/_footer.jade
+

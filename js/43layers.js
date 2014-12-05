@@ -28,3 +28,7 @@ $(function() {
 // Width of inspiration pictures should be relative to height for responsiveness
 var currentWidth = $('.inspiration').width();
 $('.inspiration').css({'height': currentWidth+'px'});
+
+// Datepicker
+rome(duedate);
+

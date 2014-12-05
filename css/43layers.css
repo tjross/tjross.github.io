@@ -76,6 +76,7 @@ p {
     text-transform: uppercase;
     outline: none;
     box-shadow: none;
+    margin-right: 5px;
 }
 
 .btn-primary {
@@ -91,6 +92,7 @@ p {
 .btn-secondary {
     background-color: #686b6a;
     border-color: #686b6a;
+    color: #fff;
 }
 
 .btn-secondary:hover, .btn-secondary:active, .btn-primary:focus {
@@ -582,12 +584,27 @@ p {
     font-size: 1rem;
 }
 
+
+/* INSPIRATION BOARD */
+
 .inspiration {
     width: 80%;
     margin: 10%;
     background-color: #e6e6e6;
     border: 2px dashed #686b6a;
 }
+
+.dropzone {
+    width: 80%;
+    margin: 40px auto;
+    background-color: #e6e6e6;
+    border: 2px dashed #686b6a;
+}
+
+.dz-message span {
+    font-family: 'Lato', sans-serif;
+}
+
 
 
 /* MY ACCOUNT */
@@ -633,13 +650,6 @@ p {
 }
 
 .user-account {
-}
-
-
-/* INSPIRATION BOARD */
-
-.inspiration-board  {
-    margin: 80px 0;
 }
 
 
@@ -734,6 +744,19 @@ p {
     .submit-your-idea h2 {
 	font-size: 1.4rem;
 	text-align: left;
+    }
+
+    .dropzone .dz-default.dz-message {
+	margin: 0;
+	width: 100%;
+	background: none;
+	position: initial;
+    }
+
+    .dropzone .dz-default.dz-message span {
+	padding: 100px 0;
+	display: block;
+	text-align: center;
     }
 
     .btn-xlarge {
