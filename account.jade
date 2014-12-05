@@ -1,0 +1,136 @@
+extends ./partials/_base.jade
+
+block title
+  title 43Layers - My Account
+
+block content
+  include  ./partials/_header.jade
+  .content
+    .container
+      .my-account
+        h1.text-center My Account
+        .profile#profile
+          .row
+            .col-md-3.col-xs-4
+              img.profile-picture(src='images/Deer_stir_products_page.jpg')
+            .col-md-9.col-xs-8
+              h3.name Tester McTesty
+              p.description
+                | Room for 100 word description here...
+        .row
+          .col-md-3
+            .menu
+              h3 My Account
+              ul.menu-links
+                li
+                  a(href="#profile") My Profile
+                li
+                  a(href="#notifications") Notifications
+                li
+                  a(href="#current-projects") Current Projects
+                li
+                  a(href="#favorites") Favorites
+                li
+                  a(href="#order-history") Order History
+                li
+                  a(href="#settings") Settings
+          .col-md-9
+            .notifications#notifications
+              h3 Notifications
+              ul
+                li Your designer has submitted a rendering.
+                li You have submitted your deposit and started your project.
+                li You have been assigned a designer.
+                li You submitted project: "Keys to Love". We are in the process of finding  you an expert designer to bring your project to life.
+                li Welcome to 43Layers! Thanks for signing up!
+            .current-projects#current-projects
+              h3 Current Projects
+              .table-responsive
+                table.table
+                  tr
+                    th Project Name
+                    th Order #
+                    th Designer
+                    th Due Date
+                    th Status
+                    th
+                  tr
+                    td Keys to Love
+                    td 12345678
+                    td Diego Taccioli
+                    td 9/12/2014
+                    td Shipping
+                    td View
+                  tr
+                    td Jewelry Nails
+                    td 12345678
+                    td Diego Taccioli
+                    td 9/25/2014
+                    td Design
+                    td View
+            .favorites#favorites
+              h3 Favorites
+              .row
+                .col-md-4
+                  img(src='http://placehold.it/100x100')
+                .col-md-4
+                  img(src='http://placehold.it/100x100')
+                .col-md-4
+                  img(src='http://placehold.it/100x100')            
+              .row
+                .col-md-4
+                  img(src='http://placehold.it/100x100')
+                .col-md-4
+                  img(src='http://placehold.it/100x100')
+                .col-md-4
+                  img(src='http://placehold.it/100x100')
+            .order-history#order-history
+              h3 Order History
+              .table-responsive
+                table.table
+                  tr
+                    th Project Name
+                    th Order #
+                    th Designer
+                    th Arrival Date
+                    th Status
+                    th Rating
+                  tr
+                    td Monograph Napkin Holder
+                    td 12345678
+                    td Diego Taccioli
+                    td 8/12/2014
+                    td On Time
+                    // This should be a button
+                    td Rate
+                  tr
+                    td Wedding This Way Sign
+                    td 12345678
+                    td Diego Taccioli
+                    td 8/5/2014
+                    td On Time
+                    // TODO: Add actual star rating
+                    td 5 Starts
+            .settings#settings
+              h3 Settings
+              .row
+                .col-md-6
+                  form
+                    .form-group
+                      label(for="email") Email Address
+                      input(type="email" placeholder="Email Address").form-control#email
+                    .form-group
+                      label Notifications Emails
+                      br
+                      label.radio-inline
+                        input(type="radio" value="yes")
+                      label.radio-inline
+                        input(type="radio" value="no")
+                    .form-group
+                      label Newsletter
+                      label.radio-inline
+                        input(type="radio" value="yes")
+                      label.radio-inline
+                        input(type="radio" value="no")
+
+  include ./partials/_footer.jade

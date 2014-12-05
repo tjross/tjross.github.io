@@ -27,6 +27,9 @@ body {
 html {
     color: #4e4d4d;
     font-size: 100%;
+}
+
+body {
     font-family: 'Lato', sans-serif;
 }
 
@@ -570,6 +573,52 @@ p {
     margin: 10%;
     background-color: #e6e6e6;
     border: 2px dashed #686b6a;
+}
+
+
+/* MY ACCOUNT */
+
+.my-account {
+    padding: 50px 0;
+}
+
+.my-account img {
+    width: 100%;
+}
+
+.cover {
+    width: 100%;
+    height: 500px;
+    margin-top: -20px;
+    background: url('../images/Hero_highres_full_width.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.profile, .menu, .notifications, .current-projects, .favorites,
+.order-history, .settings  {
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+}
+
+.profile .name {
+    margin: 5px 0;
+    text-align: left;
+}
+
+.profile .description {
+    display: none;
+}
+
+
+.profile-picture {
+    width: 100%;
+}
+
+.user-account {
 }
 
 
