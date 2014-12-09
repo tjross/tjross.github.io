@@ -11,16 +11,17 @@ block content
         h1.text-center My Account
         .profile#profile
           .row
-            .col-md-3.col-xs-4
+            .col-md-3
               img.profile-picture(src='images/Deer_stir_products_page.jpg')
-            .col-md-9.col-xs-8
+            .col-md-7
               .row
-                .col-md-10.col-xs-10
+                .col-md-12
                   h3.name Tester McTesty
-                .col-md-2.col-xs-2
-                  button(type="submit").btn.btn-default Edit
-              p.description
-                | Room for 100 word description here...
+                .col-md-12
+                  p.description
+                    | Room for 100 word description here... More words in this description. Even more words.
+            .col-md-2
+              button(type="submit").btn.btn-default.btn-block Edit Profile
         .row
           .col-md-3
             .menu
@@ -31,8 +32,6 @@ block content
                   a(href="#notifications") Notifications
                 li
                   a(href="#current-projects") Current Projects
-                li
-                  a(href="#favorites") Favorites
                 li
                   a(href="#order-history") Order History
                 li
@@ -63,30 +62,16 @@ block content
                     td Diego Taccioli
                     td 9/12/2014
                     td Shipping
-                    td View
+                    td
+                      a(href="#") View
                   tr
                     td Jewelry Nails
                     td 12345678
                     td Diego Taccioli
                     td 9/25/2014
                     td Design
-                    td View
-            .favorites#favorites
-              h2 Favorites
-              .row
-                .col-md-4
-                  img(src='http://placehold.it/100x100')
-                .col-md-4
-                  img(src='http://placehold.it/100x100')
-                .col-md-4
-                  img(src='http://placehold.it/100x100')            
-              .row
-                .col-md-4
-                  img(src='http://placehold.it/100x100')
-                .col-md-4
-                  img(src='http://placehold.it/100x100')
-                .col-md-4
-                  img(src='http://placehold.it/100x100')
+                    td
+                      a(href="#") View
             .order-history#order-history
               h2 Order History
               .table-responsive
@@ -104,8 +89,12 @@ block content
                     td Diego Taccioli
                     td 8/12/2014
                     td On Time
-                    // This should be a button
-                    td Rate
+                    td
+                      span(aria-hidden="true").glyphicon.glyphicon-star
+                      span(aria-hidden="true").glyphicon.glyphicon-star
+                      span(aria-hidden="true").glyphicon.glyphicon-star
+                      span(aria-hidden="true").glyphicon.glyphicon-star
+                      span(aria-hidden="true").glyphicon.glyphicon-star-empty
                   tr
                     td Wedding This Way Sign
                     td 12345678
@@ -113,7 +102,12 @@ block content
                     td 8/5/2014
                     td On Time
                     // TODO: Add actual star rating
-                    td 5 Starts
+                    td
+                      span(aria-hidden="true").glyphicon.glyphicon-star
+                      span(aria-hidden="true").glyphicon.glyphicon-star
+                      span(aria-hidden="true").glyphicon.glyphicon-star
+                      span(aria-hidden="true").glyphicon.glyphicon-star
+                      span(aria-hidden="true").glyphicon.glyphicon-star
             .settings#settings
               h2 Settings
               form.form-horizontal

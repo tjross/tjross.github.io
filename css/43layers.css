@@ -75,6 +75,7 @@ p {
     padding: 15px 0;
 }
 
+
 /* Removes a small shadow in input boxes only seen in iOS (Safari and Chrome) */
 .input-newsletter {
     -webkit-appearance: none;
@@ -703,17 +704,6 @@ p {
     width: 100%;
 }
 
-.cover {
-    width: 100%;
-    height: 500px;
-    margin-top: -20px;
-    background: url('../images/Hero_highres_full_width.jpg') no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
 .profile, .menu, .notifications, .current-projects, .favorites,
 .order-history, .settings  {
     padding: 10px;
@@ -721,22 +711,38 @@ p {
     border: 1px solid #ccc;
 }
 
+.menu-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-links li {
+    padding: 5px;
+}
+
+.menu-links li a {
+    color: #000;
+    font-weight: bold;
+}
+
+.menu-links li a:hover {
+    color: #20cb92;
+}
+
 .profile .name {
     margin: 5px 0;
     text-align: left;
 }
 
-.profile .description {
-    display: none;
-}
-
-
 .profile-picture {
     width: 100%;
 }
 
-.user-account {
+.current-projects a {
+    color: #20cb92;
 }
+
 
 
 /* MEDIA QUERIES */
@@ -833,6 +839,10 @@ p {
     .btn-center {
 	display: block;
 	margin: 0 auto;
+    }
+
+    .my-account .btn-default {
+	margin-top: 10px;
     }
 }
 
