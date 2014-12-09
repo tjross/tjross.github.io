@@ -508,11 +508,6 @@ p {
     color: #fff;
 }
 
-.contact-page button {
-    display: block;
-    margin: 0 auto;
-}
-
 .form-contact {
     margin: 20px 0;
 }
@@ -614,7 +609,7 @@ p {
 
 .process-mobile li {
     width: 23%;
-    height: 25px;
+    height: 20px;
     background: #ccc;
     margin-left: 4px !important;
 }
@@ -684,16 +679,18 @@ p {
 }
 
 .dropzone {
-    width: 80%;
+    width: 90%;
+    min-height: 225px;
     margin: 40px auto;
     background-color: #e6e6e6;
     border: 2px dashed #686b6a;
 }
 
-.dz-message span {
-    font-family: 'Lato', sans-serif;
+.dz-message {
+    font-family: 'Bentham', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
 }
-
 
 
 /* MY ACCOUNT */
@@ -836,19 +833,6 @@ p {
     .btn-center {
 	display: block;
 	margin: 0 auto;
-    }
-
-    .dropzone .dz-default.dz-message {
-	margin: 0;
-	width: 100%;
-	background: none;
-	position: initial;
-    }
-
-    .dropzone .dz-default.dz-message span {
-	padding: 100px 0;
-	display: block;
-	text-align: center;
     }
 }
 
