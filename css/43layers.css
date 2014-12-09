@@ -21,6 +21,13 @@ body {
 }
 
 
+/* TRANSITIONS */
+/* Apply transition-duration to smooth :hover transitions */
+*:hover{
+    transition-duration: 0.5s;
+}
+
+
 /* FONTS & TEXT */
 
 html {
@@ -600,6 +607,32 @@ p {
     padding-bottom: 80px;
 }
 
+.process-mobile {
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.process-mobile li {
+    width: 23%;
+    height: 25px;
+    background: #ccc;
+    margin-left: 4px !important;
+}
+
+.process-mobile li.active {
+    background: #20cb92;
+}
+
+.process-mobile li:first-child {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.process-mobile li:last-child {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
 .submit-your-idea .submit {
     background: transparent url('../icons/lightbulb_icon_75_green_hover.png');
 }
@@ -616,12 +649,30 @@ p {
     background: transparent url('../icons/Holdinyourhand_icon_non_hover.png');
 }
 
-
 .submit-your-idea label {
     font-family: 'Lato', sans-serife;
     font-size: 1rem;
 }
 
+.guarantee {
+    padding: 40px 15px;
+}
+
+.guarantee span {
+    padding: 10px;
+    border-radius: 50%;
+    color: #fff;
+    background: #20cb92;
+}
+
+.guarantee p {
+    margin: 0;
+}
+
+.guarantee p.subheading {
+    color: #686b6a;
+    font-size: 0.75rem;
+}
 
 /* INSPIRATION BOARD */
 
@@ -752,7 +803,6 @@ p {
     }
 
     /* Makes text in placeholder smaller */
-
     ::-webkit-input-placeholder {
 	font-size: 0.8rem;
     }
@@ -779,6 +829,10 @@ p {
 	text-align: left;
     }
 
+    .submit-your-idea .process {
+	display: none;
+    }
+
     .btn-center {
 	display: block;
 	margin: 0 auto;
@@ -800,7 +854,15 @@ p {
 
 @media(min-width:768px) {}
 
-@media(min-width:992px) {}
+@media(min-width:992px) {
+    .submit-your-idea .process-mobile {
+	display: none;
+    }
+
+    .guarantee p {
+	margin-left: -80px;
+    }
+}
 
 @media(min-width:1200px) {
     body {
@@ -870,5 +932,13 @@ p {
 
     .login {
 	padding-top: 8%;
+    }
+    
+    .submit-your-idea .process-mobile {
+	display: none;
+    }
+
+    .guarantee p {
+	margin-left: -80px;
     }
 }

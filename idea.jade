@@ -22,6 +22,11 @@ block content
           .col-md-3
             h3 4. Hold In Your Hands
               a.hold.center-block
+        ul.nav.nav-pills.process-mobile
+          li.active
+          li
+          li
+          li
         .row
           .col-md-4
             h2 Background Information
@@ -54,10 +59,20 @@ block content
                       br
                   .col-md-6
                       input.form-control(type="text" name="budget_to" placeholder="Max. e.g. $500")
-              button.btn.btn-xlarge.btn-primary.btn-center Next
+              button.btn.btn-xlarge.btn-primary Next
           .row
-            .col-md-12.col-md-offset-4
+            .col-md-8.col-md-offset-4
               p
-                | * Indicates required field
+                | * indicates required field
+          .row
+            .col-md-8.col-md-offset-4.guarantee
+              .row
+                .col-xs-2
+                  span(aria-hidden="true").glyphicon.glyphicon-ok
+                .col-xs-10
+                  p.heading
+                    | 100% money back guarantee
+                  p.subheading
+                    | A product you love or your money back
 
   include ./partials/_footer.jade
