@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/selectize.css">
     <link rel="stylesheet" href="css/selectize.bootstrap3.css">
     <link rel="stylesheet" href="css/rome.min.css">
-    <link rel="stylesheet" href="css/dropzone.css">
+    <link rel="stylesheet" href="css/basic.css">
     <link rel="stylesheet" href="css/43layers.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries-->
     <!-- WARNING: Respond.js doesn't work if you view the page via file://-->
@@ -42,17 +42,19 @@
             <h1 class="text-center">My Account</h1>
             <div id="profile" class="profile">
               <div class="row">
-                <div class="col-md-3 col-xs-4"><img src="images/Deer_stir_products_page.jpg" class="profile-picture"></div>
-                <div class="col-md-9 col-xs-8">
+                <div class="col-md-3"><img src="images/Deer_stir_products_page.jpg" class="profile-picture"></div>
+                <div class="col-md-7">
                   <div class="row">
-                    <div class="col-md-10 col-xs-10">
+                    <div class="col-md-12">
                       <h3 class="name">Tester McTesty</h3>
                     </div>
-                    <div class="col-md-2 col-xs-2">
-                      <button type="submit" class="btn btn-default">Edit</button>
+                    <div class="col-md-12">
+                      <p class="description">Room for 100 word description here... More words in this description. Even more words.</p>
                     </div>
                   </div>
-                  <p class="description">Room for 100 word description here...</p>
+                </div>
+                <div class="col-md-2">
+                  <button type="submit" class="btn btn-default btn-block">Edit Profile</button>
                 </div>
               </div>
             </div>
@@ -63,7 +65,6 @@
                     <li><a href="#profile">My Profile</a></li>
                     <li><a href="#notifications">Notifications</a></li>
                     <li><a href="#current-projects">Current Projects</a></li>
-                    <li><a href="#favorites">Favorites</a></li>
                     <li><a href="#order-history">Order History</a></li>
                     <li><a href="#settings">Settings</a></li>
                   </ul>
@@ -98,7 +99,7 @@
                         <td>Diego Taccioli</td>
                         <td>9/12/2014</td>
                         <td>Shipping</td>
-                        <td>View</td>
+                        <td><a href="#">View</a></td>
                       </tr>
                       <tr>
                         <td>Jewelry Nails</td>
@@ -106,22 +107,9 @@
                         <td>Diego Taccioli</td>
                         <td>9/25/2014</td>
                         <td>Design</td>
-                        <td>View</td>
+                        <td><a href="#">View</a></td>
                       </tr>
                     </table>
-                  </div>
-                </div>
-                <div id="favorites" class="favorites">
-                  <h2>Favorites</h2>
-                  <div class="row">
-                    <div class="col-md-4"><img src="http://placehold.it/100x100"></div>
-                    <div class="col-md-4"><img src="http://placehold.it/100x100"></div>
-                    <div class="col-md-4"><img src="http://placehold.it/100x100"></div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-4"><img src="http://placehold.it/100x100"></div>
-                    <div class="col-md-4"><img src="http://placehold.it/100x100"></div>
-                    <div class="col-md-4"><img src="http://placehold.it/100x100"></div>
                   </div>
                 </div>
                 <div id="order-history" class="order-history">
@@ -142,8 +130,7 @@
                         <td>Diego Taccioli</td>
                         <td>8/12/2014</td>
                         <td>On Time</td>
-                        <!-- This should be a button-->
-                        <td>Rate</td>
+                        <td><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></td>
                       </tr>
                       <tr>
                         <td>Wedding This Way Sign</td>
@@ -152,7 +139,7 @@
                         <td>8/5/2014</td>
                         <td>On Time</td>
                         <!-- TODO: Add actual star rating-->
-                        <td>5 Starts</td>
+                        <td><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></td>
                       </tr>
                     </table>
                   </div>
