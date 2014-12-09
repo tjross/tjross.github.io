@@ -122,6 +122,24 @@ p {
     background-color: #20cb92;
 }
 
+.btn-xlarge {
+    padding: 10px 18px;
+    font-size: 1.2rem;
+}
+
+
+/* DATEPICKER */
+/* Customization for the rome datepicker */
+
+.rd-days tr th, .rd-days tr td {
+    padding: 5px;
+}
+
+.rd-days tr td:hover {
+    color: #fff;
+    background-color: #20cb92;
+}
+
 
 /* NAVIGATION BAR */
 
@@ -293,6 +311,7 @@ p {
 }
 
 
+
 /* STEP DETAILS */
 
 .step-detail {
@@ -376,7 +395,7 @@ p {
     text-align: right;
 }
 
-.get-started {
+.get-started, .get-started:hover {
     display: block;
     width: 236px;
     height: 42px;
@@ -585,6 +604,19 @@ p {
     background: transparent url('../icons/lightbulb_icon_75_green_hover.png');
 }
 
+.submit-your-idea .meet {
+    background: transparent url('../icons/Chat_icon_non_hover.png');
+}
+
+.submit-your-idea .view {
+    background: transparent url('../icons/ScreenIcon_icon_75px.png');
+}
+
+.submit-your-idea .hold {
+    background: transparent url('../icons/Holdinyourhand_icon_non_hover.png');
+}
+
+
 .submit-your-idea label {
     font-family: 'Lato', sans-serife;
     font-size: 1rem;
@@ -763,11 +795,6 @@ p {
 	padding: 100px 0;
 	display: block;
 	text-align: center;
-    }
-
-    .btn-xlarge {
-	padding: 10px 18px;
-	font-size: 1.2rem;
     }
 }
 

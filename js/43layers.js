@@ -30,5 +30,7 @@ var currentWidth = $('.inspiration').width();
 $('.inspiration').css({'height': currentWidth+'px'});
 
 // Datepicker
-rome(duedate);
+rome(duedate,
+     {time: false,
+     });
 
