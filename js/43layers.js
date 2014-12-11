@@ -3,26 +3,31 @@ $('#select').selectize({
     optgroupOrder: ["Weddings", "Other Events"]
 });
 
-$(function() {
-    $("#first-typed").typed({
-	strings: ["Cake Topper", "Cufflinks", "Wedding Gift", "Necklaces", "Wine Charms", "Confetti", "Table Centerpieces"],
-	typeSpeed: 80,
-	showCursor: false,
-	backDelay: 5000,
-	startDelay: 500,
-	loop: true
-    });
+$('#product').typed({
+    strings: ['          ', 'Cake Topper', 'Table Centerpieces', 'Cufflinks'],
+    typeSpeed: 120,
+    backSpeed: 120,
+    backDelay: 15000,
+    showCursor: false,
+    loop: true,
+    preStringTyped: function(arrayPos) {
+	var images = [
+	    'url(../images/Hero_highres_full_width.jpg)',
+	    'url(../images/Hero_Cake_Topper.png)',
+	    'url(../images/Hero_Centerpiece.jpg)',
+	    'url(../images/Hero_Cufflinks.jpg)',
+	];
+	$('.hero').css('background-image', images[arrayPos]);
+    }
 });
 
-$(function() {
-    $("#second-typed").typed({
-	strings: ["your Wedding", "Groomsmen", "Your Fiancé", "Bridesmaids", "a Dinner Party", "New Years Eve", "a Baby Shower"],
-	typeSpeed: 80,
-	showCursor: false,
-	backDelay: 5000,
-	startDelay: 3000,
-	loop: true
-    });
+$('#occasion').typed({
+    strings: ['          ', 'Your Wedding', 'a Baby Shower', 'Your Groomsmen'],
+    typeSpeed: 120,
+    backSpeed: 120,
+    backDelay: 15000,
+    showCursor: false,
+    loop: true,
 });
 
 // Width of inspiration pictures should be relative to height for responsiveness
@@ -30,7 +35,5 @@ var currentWidth = $('.inspiration').width();
 $('.inspiration').css({'height': currentWidth+'px'});
 
 // Datepicker
-rome(duedate,
-     {time: false,
-     });
+rome(duedate, {time: false});
 
