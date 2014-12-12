@@ -7,23 +7,21 @@ block content
   include  ./partials/_header.jade
   .content
     .hero
+      p
+        | Design You Own
+        span#product
+        | For
+        span#occasion
+      h2 Your Ideas Brought to Life by World Class Designers and Makers
       .container
         .row
-          .col-md-12
-            h1 Where Everyone Is a Designer.
-            h2 Make It Personal. Make It Yours.
-            h3 Design Your Own
-              span#product
-              span  For 
-              span#occasion
-        .row
-          .col-md-3.col-md-offset-3
-            include ./partials/_select.jade
-          .col-md-3
-            form(action="idea.html" method="get")
+          form(action="idea.html" method="get")
+            .col-md-3.col-md-offset-3
+              include ./partials/_select.jade
+            .col-md-3
               button(href="idea.html").btn.btn-primary.btn-block Get Started
     // end of .hero
-
+    
     .creations
       h2 Recent Customer Creations
       .container

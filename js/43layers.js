@@ -4,7 +4,8 @@ $('#select').selectize({
 });
 
 $('#product').typed({
-    strings: [' ', 'Cake Topper', 'Table Centerpieces', 'Cufflinks'],
+    strings: ['\n', '\nCake Topper ', '\nTable Centerpieces ', '\nCufflinks '],
+    contentType: 'text',
     typeSpeed: 120,
     backSpeed: 120,
     backDelay: 7000,
@@ -19,19 +20,18 @@ $('#product').typed({
 	];
 	$('.hero').css('background-image', images[arrayPos]);
 	if (arrayPos > 0) {
-	    $('.hero h1').css('color', '#fff');
+	    $('.hero p').css('color', '#fff');
 	    $('.hero h2').css('color', '#fff');
-	    $('.hero h3').css('color', '#fff');
 	} else {
-	    $('.hero h1').css('color', '#000');
+	    $('.hero p').css('color', '#000');
 	    $('.hero h2').css('color', '#000');
-	    $('.hero h3').css('color', '#000');
 	}
     }
 });
 
 $('#occasion').typed({
-    strings: [' ', 'Your Wedding', 'a Baby Shower', 'Your Groomsmen'],
+    strings: ['\n', '\nYour Wedding', '\na Baby Shower', '\nYour Groomsmen'],
+    contentType: 'text',
     typeSpeed: 120,
     backSpeed: 120,
     backDelay: 7000,
