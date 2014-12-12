@@ -4,10 +4,10 @@ $('#select').selectize({
 });
 
 $('#product').typed({
-    strings: ['          ', 'Cake Topper', 'Table Centerpieces', 'Cufflinks'],
+    strings: [' ', 'Cake Topper', 'Table Centerpieces', 'Cufflinks'],
     typeSpeed: 120,
     backSpeed: 120,
-    backDelay: 15000,
+    backDelay: 7000,
     showCursor: false,
     loop: true,
     preStringTyped: function(arrayPos) {
@@ -18,14 +18,23 @@ $('#product').typed({
 	    'url(../images/Hero_Cufflinks.jpg)',
 	];
 	$('.hero').css('background-image', images[arrayPos]);
+	if (arrayPos > 0) {
+	    $('.hero h1').css('color', '#fff');
+	    $('.hero h2').css('color', '#fff');
+	    $('.hero h3').css('color', '#fff');
+	} else {
+	    $('.hero h1').css('color', '#000');
+	    $('.hero h2').css('color', '#000');
+	    $('.hero h3').css('color', '#000');
+	}
     }
 });
 
 $('#occasion').typed({
-    strings: ['          ', 'Your Wedding', 'a Baby Shower', 'Your Groomsmen'],
+    strings: [' ', 'Your Wedding', 'a Baby Shower', 'Your Groomsmen'],
     typeSpeed: 120,
     backSpeed: 120,
-    backDelay: 15000,
+    backDelay: 7000,
     showCursor: false,
     loop: true,
 });
