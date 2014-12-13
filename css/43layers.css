@@ -90,6 +90,7 @@ p {
     outline: none;
     box-shadow: none;
     margin-right: 5px;
+    min-width: 90px;
 }
 
 .btn-primary {
@@ -131,6 +132,7 @@ p {
 
 .btn-xlarge {
     margin-top: 20px;
+    margin-bottom: 20px;
     width: 140px;
     padding: 18px 24px;
     font-size: 1.2rem;
@@ -707,6 +709,20 @@ p {
     width: 100%;
 }
 
+.my-account .social {
+    text-align: left;
+}
+
+.my-account .social img {
+    width: 30px;
+    height: 30px;
+    margin-left: 4px;
+}
+
+.my-account .description {
+    min-height: 160px;
+}
+
 .profile, .menu, .notifications, .current-projects, .favorites,
 .order-history, .settings  {
     padding: 10px;
@@ -742,7 +758,7 @@ p {
     width: 100%;
 }
 
-.current-projects a {
+.current-projects a, .notifications a {
     color: #20cb92;
 }
 
@@ -873,6 +889,11 @@ p {
     .guarantee p {
 	margin-left: -80px;
     }
+
+    .my-account .social {
+	padding: 0 50px;
+	text-align: right;
+    }
 }
 
 @media(min-width:1200px) {
@@ -951,5 +972,10 @@ p {
 
     .guarantee p {
 	margin-left: -80px;
+    }
+
+    .my-account .social {
+	padding: 0 50px;
+	text-align: right;
     }
 }
