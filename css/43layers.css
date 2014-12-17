@@ -769,7 +769,6 @@ p {
 }
 
 
-
 /* MEDIA QUERIES */
 
 @media(max-width:767px) {
@@ -801,6 +800,10 @@ p {
 
     .hero select {
 	font-size: 0.6rem;
+    }
+
+    .creations {
+	display: none;
     }
 
     .testimonial {
@@ -887,6 +890,10 @@ p {
 	font-size: 2.5em;
     }
 
+    .creations-mobile {
+	display: none;
+    }
+
     .submit-your-idea .process-mobile {
 	display: none;
     }
@@ -924,6 +931,10 @@ p {
 
     .hero button {
 	height: 42px;
+    }
+
+    .creations-mobile {
+	display: none;
     }
 
     .step-number {
