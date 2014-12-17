@@ -30,8 +30,8 @@ $('#occasion').typed({
     contentType: 'text',
     typeSpeed: 250,
     backSpeed: 250,
-    startDelay: 0,
-    backDelay: 7000,
+    startDelay: 3000,
+    backDelay: 6000,
     showCursor: false,
     loop: true,
 });
