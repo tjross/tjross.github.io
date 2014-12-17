@@ -196,7 +196,7 @@ p {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    transition: background-image 3s ease-in-out;
+    transition: background-image 6s ease-in-out;
 }
 
 .hero #product {
