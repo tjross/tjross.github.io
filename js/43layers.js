@@ -4,36 +4,33 @@ $('#select').selectize({
 });
 
 $('#product').typed({
-    strings: ['\n', '\nCake Topper ', '\nTable Centerpieces ', '\nCufflinks '],
+    strings: ['\nCake Topper ', '\nTable Centerpieces ',
+	      '\nCufflinks ', '\nTiebar '],
     contentType: 'text',
-    typeSpeed: 120,
-    backSpeed: 120,
+    typeSpeed: 250,
+    backSpeed: 250,
+    startDelay: 0,
     backDelay: 7000,
     showCursor: false,
     loop: true,
     preStringTyped: function(arrayPos) {
 	var images = [
-	    'url(../images/Hero_highres_full_width.jpg)',
 	    'url(../images/Hero_Cake_Topper.png)',
 	    'url(../images/Hero_Centerpiece.jpg)',
 	    'url(../images/Hero_Cufflinks.jpg)',
+	    'url(../images/Hero_Tiebar.png)',
 	];
 	$('.hero').css('background-image', images[arrayPos]);
-	if (arrayPos > 0) {
-	    $('.hero p').css('color', '#fff');
-	    $('.hero h2').css('color', '#fff');
-	} else {
-	    $('.hero p').css('color', '#000');
-	    $('.hero h2').css('color', '#000');
-	}
     }
 });
 
 $('#occasion').typed({
-    strings: ['\n', '\nYour Wedding', '\na Baby Shower', '\nYour Groomsmen'],
+    strings: ['\nYour Wedding', '\na Baby Shower',
+	      '\nYour Groomsmen', '\nBest Man'],
     contentType: 'text',
-    typeSpeed: 120,
-    backSpeed: 120,
+    typeSpeed: 250,
+    backSpeed: 250,
+    startDelay: 0,
     backDelay: 7000,
     showCursor: false,
     loop: true,

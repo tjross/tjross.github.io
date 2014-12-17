@@ -183,11 +183,12 @@ p {
     padding: 15px 0;
 }
 
+
 /* HERO */
 
 .hero {
     min-height: 100vh;
-    background-image: url('../images/Hero_highres_full_width.jpg') no-repeat;
+    background-image: url('../images/Hero_Cake_Topper.png') no-repeat;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -195,28 +196,28 @@ p {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    transition: background-image 3s ease-in-out;
+    transition: background-image 6s ease-in-out;
 }
 
 .hero #product {
     text-transform: uppercase;
     color: #fff;
     background-color: #20cb92;
+    text-shadow: none;
 }
 
 .hero #occasion {
     text-transform: uppercase;
     color: #fff;
     background-color: #d0b0d9;
+    text-shadow: none;
 }
 
-.hero p {
-    font-size: 2.3rem;
-}
-
-.hero h1, .hero h2, .hero h3, .hero p {
+.hero h1, .hero h2 {
     font-family: 'Bentham', serif;
     text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px #000;
 }
 
 .hero .selectize-input {
@@ -224,7 +225,6 @@ p {
     border-radius: 0px;
     padding: 10px 16px;
 }
-
 
 /* RECENT CUSTOMER CREATIONS */
 
@@ -789,19 +789,14 @@ p {
 	padding: 50px 10px 100px;
     }
 
-    .hero p {
-	font-size: 1.7rem;
-	white-space: pre;
+    .hero h1 {
+	font-size: 2rem;
     }
 
     .hero h2 {
-	font-size: 1.2rem;
-	margin-top: 20px 0;
-    }
-
-    .hero h3 {	
-	margin: 60px 0;
-	font-size: 0.6rem;
+	min-height: 180px;
+	padding: 20px 0 40px;
+	white-space: pre;
     }
 
     .hero select {
@@ -883,10 +878,10 @@ p {
 }
 
 @media(min-width:992px) {
-    .hero p {
-	font-size: 3rem;
+    .hero h1 {
+	font-size: 2.5em;
     }
-    
+
     .submit-your-idea .process-mobile {
 	display: none;
     }
@@ -914,18 +909,12 @@ p {
 	padding: 150px 0;
     }
 
-    .hero p {
-	font-size: 3rem;
+    .hero h1 {
+	font-size: 2.5em;
     }
 
     .hero h2 {
 	margin: 60px 0;
-	font-size: 2.5rem;
-    }
-
-    .hero h3 {	
-	margin: 60px 0;
-	font-size: 1rem;
     }
 
     .hero button {
