@@ -4,7 +4,7 @@ $('#select').selectize({
 });
 
 $('#product').typed({
-    strings: ['\nCake Topper ', '\nTable Centerpieces ',
+    strings: ['\nCake Topper ', '\nTable \nCenterpieces ',
 	      '\nCufflinks ', '\nTiebar '],
     contentType: 'text',
     typeSpeed: 250,
@@ -30,7 +30,7 @@ $('#occasion').typed({
     contentType: 'text',
     typeSpeed: 250,
     backSpeed: 250,
-    startDelay: 3000,
+    startDelay: 4000,
     backDelay: 6000,
     showCursor: false,
     loop: true,
