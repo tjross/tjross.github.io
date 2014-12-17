@@ -186,9 +186,11 @@ p {
 /* HERO */
 
 .hero {
+    min-height: 100vh;
     background-image: url('../images/Hero_highres_full_width.jpg') no-repeat;
     background-repeat: no-repeat;
     background-position: center center;
+    background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -788,7 +790,6 @@ p {
     }
 
     .hero p {
-	min-height: 114px;
 	font-size: 1.7rem;
 	white-space: pre;
     }
