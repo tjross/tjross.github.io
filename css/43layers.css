@@ -732,8 +732,12 @@ p {
     background-color: #ccc;
 }
 
-.my-account span {
+.my-account .fa-stack {
     margin-left: 5px;
+}
+
+.my-account .glyphicon-star {
+    color: #e3cf7a;
 }
 
 .my-account .description {
