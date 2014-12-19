@@ -4,8 +4,8 @@ $('#select').selectize({
 });
 
 $('#product').typed({
-    strings: ['\nCake Topper ', '\nTable \nCenterpieces ',
-	      '\nCufflinks ', '\nTiebar '],
+    strings: ['Cake Topper', 'Table Centerpieces',
+	      'Cufflinks', 'Tie Bar'],
     contentType: 'text',
     typeSpeed: 250,
     backSpeed: 250,
@@ -25,8 +25,8 @@ $('#product').typed({
 });
 
 $('#occasion').typed({
-    strings: ['\nYour Wedding', '\na Baby Shower',
-	      '\nYour Groomsmen', '\nBest Man'],
+    strings: ['Your Wedding', 'a Baby Shower',
+	      'Your Groomsmen', 'Best Man'],
     contentType: 'text',
     typeSpeed: 250,
     backSpeed: 250,

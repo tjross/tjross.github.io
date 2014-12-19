@@ -214,10 +214,17 @@ p {
 }
 
 .hero h1, .hero h2 {
-    font-family: 'Bentham', serif;
     text-align: center;
     color: #fff;
     text-shadow: 2px 2px #000;
+}
+
+.hero h1 {
+    font-family: 'Bentham', serif;
+}
+
+.hero h2 {
+    font-family: 'Lato', sans-serif;
 }
 
 .hero .selectize-input {
@@ -793,9 +800,9 @@ p {
     }
 
     .hero h2 {
-	min-height: 180px;
-	padding: 20px 0 40px;
-	white-space: pre;
+	min-height: 4rem;
+	font-size: 0.7rem;
+	padding: 20px 0;
     }
 
     .hero select {
@@ -926,7 +933,7 @@ p {
     }
 
     .hero h2 {
-	margin: 60px 0;
+	margin: 140px 0 60px;
     }
 
     .hero button {
