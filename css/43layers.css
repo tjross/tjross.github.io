@@ -726,10 +726,14 @@ p {
     text-align: left;
 }
 
-.my-account .social img {
-    width: 30px;
-    height: 30px;
-    margin-left: 4px;
+.my-account .fa {
+    border-radius: 4px;
+    color: #fff;
+    background-color: #ccc;
+}
+
+.my-account span {
+    margin-left: 5px;
 }
 
 .my-account .description {
