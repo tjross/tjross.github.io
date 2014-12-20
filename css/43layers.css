@@ -709,6 +709,7 @@ p {
     font-family: 'Bentham', sans-serif;
     font-size: 1.5rem;
     text-align: center;
+    margin-top: 25%;
 }
 
 
@@ -1002,5 +1003,9 @@ p {
     .my-account .social {
 	padding: 0 50px;
 	text-align: right;
+    }
+
+    .dz-message {
+	margin-top: 11%;
     }
 }
