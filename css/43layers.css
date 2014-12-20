@@ -119,9 +119,18 @@ p {
    color: #ccc;
 }
 
-.btn-default .badge {
-    background-color: #20cb92;
-    margin-left: 5px;
+.notifications-badge {
+    background: #20cb92;
+    position: relative;
+    top: -60px;
+    left: 70px;
+}
+
+.notifications-badge-mobile {
+    background: #20cb92;
+    position: relative;
+    top: -55px;
+    left: 94%;
 }
 
 .btn-contact {
@@ -191,7 +200,6 @@ p {
     background-image: url('../images/Hero_Cake_Topper.png') no-repeat;
     background-repeat: no-repeat;
     background-position: center center;
-    background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -893,6 +901,10 @@ p {
     .my-account .btn-default {
 	margin-top: 10px;
     }
+
+    .notifications-badge {
+	display: none;
+    }
 }
 
 @media(min-width:768px) {
@@ -902,6 +914,10 @@ p {
 }
 
 @media(min-width:992px) {
+    .hero {
+	background-attachment: fixed;
+    }
+    
     .hero h1 {
 	font-size: 2.5em;
     }
@@ -922,6 +938,10 @@ p {
 	padding: 0 50px;
 	text-align: right;
     }
+
+    .notifications-badge-mobile {
+	display: none;
+    }
 }
 
 @media(min-width:1200px) {
@@ -935,6 +955,7 @@ p {
 
     .hero {
 	padding: 150px 0;
+	background-attachment: fixed;
     }
 
     .hero h1 {
@@ -990,6 +1011,10 @@ p {
 
     .login {
 	padding-top: 8%;
+    }
+
+    .notifications-badge-mobile {
+	display: none;
     }
     
     .submit-your-idea .process-mobile {
