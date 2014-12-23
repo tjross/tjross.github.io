@@ -207,18 +207,21 @@ p {
     transition: background-image 6s ease-in-out;
 }
 
-.hero #product {
+.hero .animate {
+    display: inline;
+    margin: 0;
+    padding: 2px;
     text-transform: uppercase;
     color: #fff;
-    background-color: #20cb92;
     text-shadow: none;
 }
 
+.hero #product {
+    background-color: #20cb92;
+}
+
 .hero #occasion {
-    text-transform: uppercase;
-    color: #fff;
     background-color: #d0b0d9;
-    text-shadow: none;
 }
 
 .hero h1, .hero h2 {

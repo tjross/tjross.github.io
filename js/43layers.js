@@ -3,37 +3,20 @@ $('#select').selectize({
     optgroupOrder: ["Weddings", "Other Events"]
 });
 
-$('#product').typed({
-    strings: ['Cake Topper', 'Table Centerpieces',
-	      'Cufflinks', 'Tie Bar'],
-    contentType: 'text',
-    typeSpeed: 250,
-    backSpeed: 250,
-    startDelay: 0,
-    backDelay: 7000,
-    showCursor: false,
-    loop: true,
-    preStringTyped: function(arrayPos) {
-	var images = [
-	    'url(../images/Hero_Cake_Topper.png)',
-	    'url(../images/Hero_Centerpiece.jpg)',
-	    'url(../images/Hero_Cufflinks.jpg)',
-	    'url(../images/Hero_Tiebar.png)',
-	];
-	$('.hero').css('background-image', images[arrayPos]);
-    }
-});
-
-$('#occasion').typed({
-    strings: ['Your Wedding', 'a Baby Shower',
-	      'Your Groomsmen', 'Best Man'],
-    contentType: 'text',
-    typeSpeed: 250,
-    backSpeed: 250,
-    startDelay: 4000,
-    backDelay: 6000,
-    showCursor: false,
-    loop: true,
+$(function() {
+    $('.animate').textillate({
+	selector: '.texts',
+	loop: true,
+	minDisplayTime: 7000,
+	in: {
+	    effect: 'fadeInDown',
+	    sync: true
+	},
+	out: {
+	    effect: 'fadeOutDown',
+	    sync: true
+	}
+    });
 });
 
 // Width of inspiration pictures should be relative to height for responsiveness
