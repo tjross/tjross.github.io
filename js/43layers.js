@@ -39,7 +39,7 @@ $(function() {
 
 // Change the background image when the 
 currentBg = 0;
-$('#product').on('outAnimationBegin.tlt', function() {
+$('#occasion').on('outAnimationBegin.tlt', function() {
     currentBg++;
     if (currentBg > 3) {
 	currentBg = 0;
