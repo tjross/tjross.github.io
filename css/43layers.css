@@ -197,14 +197,14 @@ p {
 
 .hero {
     min-height: 100vh;
-    background-image: url('../images/Hero_Cake_Topper.png') no-repeat;
+    background-image: url('../images/Hero_Cake_Topper.png');
     background-repeat: no-repeat;
     background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    transition: background-image 6s ease-in-out;
+    transition: background-image 0.5s ease-in-out;
 }
 
 .hero .animate {
