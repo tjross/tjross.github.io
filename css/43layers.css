@@ -22,7 +22,7 @@ body {
 
 
 /* TRANSITIONS */
-/* Apply transition-duration to smooth :hover transitions */
+
 *:hover{
     transition-duration: 0.5s;
 }
@@ -727,6 +727,7 @@ p {
     font-size: 0.75rem;
 }
 
+
 /* INSPIRATION BOARD */
 
 .inspiration {
@@ -749,6 +750,21 @@ p {
     font-size: 1.5rem;
     text-align: center;
     margin-top: 25%;
+}
+
+
+/* MEET YOUR DESIGNER */
+
+.meet-your-designer .submit {
+    background: transparent url('../icons/Lightbulb_icon_75px.png');
+}
+
+.meet-your-designer .meet {
+    background: transparent url('../icons/Chat_icon_hover.png');
+}
+
+.meet-your-designer p {
+    margin-bottom: 80px;
 }
 
 
