@@ -287,6 +287,14 @@ p {
     max-height: 220px;
 }
 
+.creations-mobile .carousel-indicators {
+    bottom: -50px;
+}
+
+.creations-mobile .carousel-indicators li {
+    border-color: #20cb92;
+}
+
 
 /* TESTIMONIAL */
 

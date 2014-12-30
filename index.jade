@@ -58,7 +58,11 @@ block content
 
     .creations-mobile
       h2 Recent Customer Creations
-      .container.carousel.slide#creations-carousel(data-ride="carousel")
+      .container.carousel.slide#creations-carousel(data-ride="carousel" data-ride="15000")
+        ol.carousel-indicators
+          li.active(data-target="#creations-carousel" data-slide-to="0")
+          li(data-target="#creations-carousel" data-slide-to="1")
+          li(data-target="#creations-carousel" data-slide-to="2")
         .creation.carousel-inner(role="listbox")
           .item.active.creation
             .creation-picture
