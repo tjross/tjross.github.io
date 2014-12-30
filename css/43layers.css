@@ -147,9 +147,9 @@ p {
 .btn-xlarge {
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 140px;
+    width: 130px;
     padding: 14px 26px;
-    font-size: 1.0rem;
+    font-size: 1rem;
 }
 
 
@@ -931,6 +931,7 @@ p {
 
     .my-account .btn-default {
 	margin-top: 10px;
+	width: 190px;
     }
 
     .notifications-badge {
