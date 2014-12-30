@@ -60,19 +60,19 @@ block content
       h2 Recent Customer Creations
       .container.carousel.slide#creations-carousel(data-ride="carousel")
         .creation.carousel-inner(role="listbox")
-          .item.active
+          .item.active.creation
             .creation-picture
               img(src='images/Deer_stir_products_page.jpg')
             h3 Animal Stir Sticks &amp; Centerpieces
             p
               | Kaella wanted to create wooden animal themed stir sticks and table centerpieces for her friend&apos;s baby shower. This is what she came up with.
-          .item
+          .item.creation
             .creation-picture
               img(src='images/Cufflinks_products.jpg' data-toggle="modal" data-target="#recent-creation")
             h3 Monogram Fighting Irish Cufflinks
             p
               | Josh, a Notre Dame grad, was having his wedding at his alma mater in South Bend, he wanted to create some special gifts for his groomsmen. This is what they wore.
-          .item
+          .item.creation
             .creation-picture
               img(src='images/Key_horizontal.jpg')
             h3 Keys to Love
@@ -82,7 +82,7 @@ block content
       
     .testimonial
       h2 What Our Customers Are Saying
-      .container.carousel.slide#testimonials-carousel(data-ride="carousel")
+      .container.carousel.slide#testimonials-carousel(data-ride="carousel" data-interval="20000" data-wrap="true")
         .carousel-inner(role="listbox")
           .item.active
             p
