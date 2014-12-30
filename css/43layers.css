@@ -207,6 +207,15 @@ p {
     transition: background-image 0.5s ease-in-out;
 }
 
+.hero-preload {
+    width: 0;
+    height: 0;
+    display: inline;
+    background-image: url('../images/Hero_Centerpiece.jpg');
+    background-image: url('../images/Hero_Cufflinks.jpg');
+    background-image: url('../images/Hero_Tiebar.jpg');
+}
+
 .hero .animate {
     display: inline;
     margin: 0;
