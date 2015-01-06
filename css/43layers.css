@@ -980,6 +980,7 @@ p {
 
 @media(min-width:992px) {
     .hero {
+	height: 100vh;
 	background-attachment: fixed;
     }
     
