@@ -37,26 +37,23 @@ $(function() {
     });
 });
 
-// Change the background image when the 
+
+// Change the background image when the text animation out begins
 currentBg = 0;
 $('#occasion').on('outAnimationBegin.tlt', function() {
-    currentBg++;
-    if (currentBg > 3) {
-	currentBg = 0;
-    }
-    var images = [
-	'url(../images/Hero_Cake_Topper.png)',
-	'url(../images/Hero_Centerpiece.jpg)',
-	'url(../images/Hero_Cufflinks.jpg)',
-	'url(../images/Hero_Tiebar.jpg)',
-    ];
-    $('.hero').css('background-image', images[currentBg]);
+    var classes = ['hero-caketopper', 'hero-centerpiece', 'hero-cufflinks',
+		   'hero-tiebar'];
+    
+    $('.hero').removeClass(classes[currentBg]);    
+    currentBg = currentBg === 3 ? 0 : currentBg + 1;
+    $('.hero').addClass(classes[currentBg]);
 });
 
 
 // Width of inspiration pictures should be relative to height for responsiveness
 var currentWidth = $('.inspiration').width();
 $('.inspiration').css({'height': currentWidth+'px'});
+
 
 // Datepicker
 rome(duedate, {time: false});

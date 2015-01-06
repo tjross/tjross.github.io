@@ -197,7 +197,6 @@ p {
 
 .hero {
     min-height: 500px;
-    background-image: url('../images/Hero_Cake_Topper.png');
     background-repeat: no-repeat;
     background-position: center center;
     -webkit-background-size: cover;
@@ -211,6 +210,22 @@ p {
     content: url('../images/Hero_Centerpiece.jpg')
 		url('../images/Hero_Cufflinks.jpg')
 		url('../images/Hero_Tiebar.jpg');
+}
+
+.hero-caketopper {
+    background-image: url('../images/Hero_Cake_Topper.png');
+}
+
+.hero-centerpiece {
+    background-image: url('../images/Hero_Centerpiece.jpg');
+}
+
+.hero-cufflinks {
+    background-image: url('../images/Hero_Cufflinks.jpg')
+}
+
+.hero-tiebar {
+    background-image: url('../images/Hero_Tiebar.jpg');
 }
 
 .hero .animate {
