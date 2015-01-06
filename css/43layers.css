@@ -196,7 +196,7 @@ p {
 /* HERO */
 
 .hero {
-    min-height: 100vh;
+    min-height: 500px;
     background-image: url('../images/Hero_Cake_Topper.png');
     background-repeat: no-repeat;
     background-position: center center;
@@ -204,7 +204,6 @@ p {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    transition: background-image 1s ease-in-out;
 }
 
 .hero::before {
