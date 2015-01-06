@@ -213,7 +213,7 @@ p {
 
 .hero-caketopper {
     background-image: url('../images/Hero_Cake_Topper.png');
-    background-position: 75% 50%;
+    background-position: 90% 0;
 }
 
 .hero-centerpiece {
@@ -228,7 +228,7 @@ p {
 
 .hero-tiebar {
     background-image: url('../images/Hero_Tiebar.png');
-    background-position: 90% 0;
+    background-position: 95% 0;
 }
 
 .hero .animate {
