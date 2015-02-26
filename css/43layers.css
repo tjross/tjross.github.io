@@ -242,17 +242,19 @@ p {
 }
 
 .hero #product {
-    background-color: #20cb92;
+    color: #20cb92;
+    text-shadow: 1px 1px #999;
 }
 
 .hero #occasion {
-    background-color: #d0b0d9;
+    color: #d0b0d9;
+    text-shadow: 1px 1px #999;
 }
 
 .hero h1, .hero h2 {
     text-align: center;
     color: #fff;
-    text-shadow: 2px 2px #000;
+    text-shadow: 1px 1px #999;
 }
 
 .hero h1 {
